@@ -1,0 +1,20 @@
+<view class="gameShow">
+    <view class="gameS_top">
+        <view class="h3">西甲-维尼修斯打人爆发冲突 皇马0-1瓦伦西亚</view>
+        <view class="date">2023-05-22 08:17:10</view>
+    </view>
+    <view class="gameS_container">
+        <view class="p">北京时间5月22日凌晨，2022-2023赛季西甲第35轮的一场大战打响，西甲豪门皇马在客场对战瓦伦西亚。上半场比赛，洛佩斯打入一球。下半场比赛，罗德里戈击中门楣，维尼修斯击打杜罗面部，主裁在视频裁判的提醒下给了维尼修斯红牌。全场比赛结束，皇马在客场0-1输给瓦伦西亚，目前71个积分位居第三位。</view>
+        
+        <view class="img">
+            <image src="https://images.liquorbox.cn/pingqiu/game1.jpg" mode="aspectFill"/>
+            <image src="https://images.liquorbox.cn/pingqiu/game2.jpg" mode="aspectFill"/>
+            <image src="https://images.liquorbox.cn/pingqiu/game3.jpg" mode="aspectFill"/>
+            <image src="https://images.liquorbox.cn/pingqiu/game4.jpg" mode="aspectFill"/>
+        </view>
+    </view>
+</view>
+
+
+
+

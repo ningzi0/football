@@ -1,0 +1,25 @@
+<view class="competition">
+  <block wx:for="{{competiContent}}">
+      <view class="competiContent">
+        <view class="time"><t-tag class="margin-16" variant="light" theme="success">{{item.time}}</t-tag></view>
+        <block wx:for="{{item.item}}">
+          <view class="item">
+              <view class="left conItem">
+                  <image src="{{item.img}}" mode=""/>
+                  <text>{{item.name}}</text>
+              </view>
+              <view class="center conItem">
+                <text>0</text> : <text>0</text>
+              </view>
+              <view class="right conItem">
+                <image src="{{item.img2}}" mode=""/>
+                <text>{{item.name2}}</text>
+              </view>
+          </view>
+        </block>
+      </view>
+  </block>
+</view>
+
+
+

@@ -1,0 +1,144 @@
+
+.example-search {
+    background-color: #fff;
+    padding: 16rpx 32rpx;
+  }
+  .tag{
+      display: flex;
+      margin: 20rpx;
+  }
+  .tag button{
+    font-weight: 500 !important;
+    flex: 1;
+    margin: 0 10rpx;
+  }
+  .t-tag{
+      flex: 1;
+      text-align: center;
+  }
+
+
+
+
+
+  
+  .block--left,
+  .block--right {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .wrapper + .wrapper {
+    margin-top: 32rpx;
+  }
+  .popLeft{
+    width: 27%;
+    height: 100vh;
+    background-color: #2a394e;
+    overflow-y: scroll;
+    padding: 0 8rpx;
+    box-sizing: border-box;
+}
+
+.popLeft .t-tag{
+    display: block;
+    margin: 5rpx 0;
+}
+.popLeft .t-tag--light.t-tag--default {
+    border: 0 !important;
+    background: none !important;
+    color: #fff !important;
+    text-align: left;
+    opacity: 0.5;
+}
+
+.popLeft .t-tag--checked{
+    text-align: left !important;
+    background: none !important;
+    border: 0 !important;
+    color: #3696ec !important;
+    font-weight: bold;
+}
+
+.popWrap{
+    display: flex;
+}
+.popRight{
+    background: #eff0f2;
+    height: 100vh;
+    width: 73%;
+    overflow-y: scroll;
+    position: relative;
+}
+.popRight .t-tag--checked{
+    color: #0052d9 !important;
+    margin: 10rpx 10rpx 10rpx 0;
+    font-weight: bold;
+    font-size: 26rpx !important;
+}
+
+.popRCon{
+    background: #fff;
+    margin: 15rpx;
+    padding: 15rpx;
+}
+.popRCon .title{
+    font-size: 28rpx;
+}
+
+.popRight .t-tag--light.t-tag--default,.sort .t-tag--light.t-tag--default{
+    text-align: left;
+    margin: 10rpx 10rpx 10rpx 0;
+    font-weight: bold;
+    font-size: 26rpx !important;
+}
+
+.t-slider--top {
+    margin-top: 30rpx;
+}
+
+.popRight .btn{
+    display: flex;
+    position: fixed;
+    bottom: 20rpx;
+    right: 0%;
+    margin: 0 20rpx;
+    z-index: 20000;
+}
+.popRight .btn button{
+    flex: 1;
+}
+
+.block2 {
+    position: relative;
+    width: 300px;
+    height: 240px;
+    background: #fff;
+    border-radius: 16rpx;
+  }
+
+.close-btn {
+    position: absolute;
+    left: 50%;
+    margin-left: -32rpx;
+    bottom: calc(-1 * (48rpx + 64rpx));
+  }
+  .sort .title{
+      margin-bottom: 10rpx;
+  }
+  
+
+
+
+
+.btn{
+    position: fixed;
+    z-index: 555;
+    top: 65%;
+    right: 20rpx;
+    opacity: 0.9;
+}
+.btn button{
+    margin: 10rpx 0;
+    display: block;
+}

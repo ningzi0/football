@@ -1,0 +1,12 @@
+.t-textarea{
+  margin: 30rpx !important;
+  border-radius: 20rpx;
+}
+.btn{
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.t-input--border {
+  margin: 0 30rpx !important;
+  border-radius: 20rpx !important;
+}

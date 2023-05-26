@@ -1,0 +1,11 @@
+<t-input placeholder="您的联系方式" />
+<t-textarea
+  t-class="external-class"
+  placeholder="请输入投诉与建议"
+  disableDefaultPadding="{{true}}"
+/>
+<view class="btn">
+<t-button theme="primary" size="medium" shape="round" block bind:tap="showIconMessage">提交</t-button>
+</view>
+
+<t-message id="t-message" />

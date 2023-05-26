@@ -1,0 +1,106 @@
+<t-sticky>
+    <view class="sticky">
+        <view class="example-search">
+            <t-search model:value="{{value}}" placeholder="点击这里搜索" />
+        </view>
+
+        <view class="tag">
+            <t-button theme="primary" size="small" wx:for="{{position}}" wx:key="index" variant="outline" bind:tap="handlePopup" data-item="{{item}}">筛选</t-button>
+            <t-button theme="primary" size="small" wx:for="{{position}}" wx:key="index" bind:tap="handlePopup" data-item="{{item}}">赛季 21_23cn</t-button>
+            <t-button size="small" bind:tap="handlePopup2">排序</t-button>
+        </view>
+    </view>
+</t-sticky>
+
+<view class="btn">
+    <t-button theme="light" size="small">对比</t-button>
+    <t-button theme="primary" size="small" bindtap='forceSales'>强买</t-button>
+    <t-button theme="danger" size="small">转会</t-button>
+    <t-button size="small">下放</t-button>
+    <t-button theme="primary" size="small" bindtap="jump" style="{{!showCheckBox?'display:none':'display:block'}}">确定</t-button>
+
+</view>
+
+<view class="playerWrap">
+    <view class="playerContainer">
+        <block wx:for="{{playerList}}">
+            <view class="playerContainerItem">
+                <t-checkbox-group bind:change="handleGroupChange" data-player="{{item.playerid}}" style="{{!showCheckBox?'display:none':'display:block'}}" options="{{options}}" />
+                <navigator url="/pages/playerShow/playerShow">
+                    <t-badge count="{{item.have}}" offset="{{ [0, 2] }}"></t-badge>
+                    <view class="playerItem">
+                        <view class="playerPic">
+                            <image src="{{item.imgSrc}}" mode="aspectFill" />
+                        </view>
+                        <view class="playerTitleInfo">
+                            <view class="playerName">
+                                <text>{{item.nameCn}}</text>
+                                <text>{{item.nameEn}}</text>
+                            </view>
+                            <view class="PersonalInfo">{{item.PersonalInfo}}</view>
+                            <view class="price">身价:{{item.price}}元</view>
+                        </view>
+                        <view class="playerInfo">
+                            <text>{{item.playerCity}}</text>
+                            <text>{{item.playerNum}}</text>
+                            <text>{{item.playerLoca}}</text>
+                        </view>
+                        <view class="playerlevel {{item.colorLetter}}"> {{item.playerLetter}} </view>
+                        <view class="playerImg">
+                            <image src="{{item.playerIcon}}" mode="" />
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </block>
+    </view>
+</view>
+
+
+
+<!-- 弹出层 -->
+<t-popup visible="{{visible}}" close-btn bind:visible-change="onVisibleChange" placement="{{cur.value || 'top'}}">
+    <view class="block popWrap block--{{cur.value}}">
+        <view class="popLeft">
+            <block wx:for="{{item}}">
+                <t-check-tag class="margin-16" default-checked="{{item.checked}}" size="large" variant="light" content="{{item.con}}" />
+            </block>
+        </view>
+        <view class="popRight">
+            <block wx:for="{{screen}}">
+                <view class="popRCon">
+                    <view class="title">{{item.title}}</view>
+                    <block wx:for="{{item.content}}">
+                        <t-check-tag class="margin-16" size="large" variant="light" content="{{item}}" />
+                    </block>
+                </view>
+            </block>
+            <view class="popRCon">
+                <view class="title">身高(cm)</view>
+                <t-slider show-extreme-value label="${value}" max="200" default-value="{{ [0, 200] }}" range />
+            </view>
+
+            <view class="btn">
+                <t-button theme="primary" size="small" bind:tap="onClose">确定</t-button>
+            </view>
+        </view>
+    </view>
+</t-popup>
+
+
+
+<t-popup visible="{{visible2}}" bind:visible-change="onVisibleChange2" placement="center">
+    <view class="block2">
+        <view class="sort">
+            <block wx:for="{{sort}}">
+                <view class="popRCon">
+                    <view class="title">{{item.title}}</view>
+                    <block wx:for="{{item.content}}">
+                        <t-check-tag class="margin-16" size="large" variant="light" content="{{item}}" />
+                    </block>
+                </view>
+            </block>
+        </view>
+        <t-icon t-class="close-btn" name="close-circle" size="32" color="#fff" bind:tap="onClose2" />
+    </view>
+</t-popup>

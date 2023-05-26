@@ -1,0 +1,31 @@
+
+.priceNumber{
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 20rpx;
+    margin-bottom: 15rpx;
+    display: flex;
+    align-items: center;
+}
+.priceNumber .text{
+    flex: 2;
+    font-size: 28rpx;
+}
+
+
+
+
+.button-fixed{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    padding: 20rpx ;
+    box-sizing: border-box;
+}
+.button-fixed button{
+    flex: 1 !important;
+    margin: 0 10rpx;
+}
+

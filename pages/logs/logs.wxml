@@ -1,0 +1,12 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log.date}}</text>
+  </block>
+</view>
+
+<t-tab-bar value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}">
+  <t-tab-bar-item wx:for="{{list}}" wx:key="index" wx:for-index="idx" value="{{item.value}}" icon="{{item.icon}}" data-index="{{index}}">
+    {{item.label}}
+  </t-tab-bar-item>
+</t-tab-bar>

@@ -1,0 +1,33 @@
+/* pages/my_competition/my_competition.wxss */
+.competiContent .time{
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+.competition .item {
+  display: flex;
+  align-items: center;
+  background-color: #fff; 
+  padding: 20rpx;
+  border-radius: 15rpx;
+  border-bottom: 1px solid #eee;
+}
+.competition .item .conItem{
+  flex: 1;
+  text-align: center;
+  font-size: 28rpx;
+}
+.competition .item .conItem text{
+  padding: 15rpx 0;
+  display: inline-block;
+}
+.competition .item image{
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  margin: 0 auto;
+}
+
+.competiContent{
+  margin-bottom: 20rpx;
+}

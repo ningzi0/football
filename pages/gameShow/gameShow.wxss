@@ -1,0 +1,23 @@
+/* pages/gameShow/gameShow.wxss */
+.gameShow{
+    margin: 20rpx;
+    background-color: #fff;
+    padding: 40rpx;
+}
+.gameS_top .h3{
+    font-size: 40rpx;
+    font-weight: bold;
+}
+.gameS_top .date{
+    font-size: 28rpx;
+    color: #999;
+    padding: 30rpx 0;
+}
+.gameS_container{
+    line-height: 1.5;
+    font-size: 30rpx;
+    text-align: justify;
+}
+.img{
+    margin-top: 20rpx;
+}

@@ -1,0 +1,26 @@
+<view class="search">
+    <t-input
+        placeholder="输入关键词进行搜索"
+        borderless="{{true}}"
+        suffixIcon="{{ { name: 'search', ariaLabel: '搜索' } }}"
+        style="{{style}}"
+    />
+</view>
+
+
+
+<view class="cardContent">
+    <t-cell-group theme="card">
+        <t-cell title="杯赛说明" hover arrow url="/pages/gameShow/gameShow" />
+        <t-cell title="欧联杯赛事说明" hover arrow url="/pages/gameShow/gameShow"  />
+        <t-cell title="欧联杯-尤文加时丢球 塞维利亚总分3-2晋级决赛" hover arrow url="/pages/gameShow/gameShow"  />
+        <t-cell title="杯赛说明" hover arrow url="/pages/gameShow/gameShow"  />
+        <t-cell title="欧联杯赛事说明" hover arrow url="/pages/gameShow/gameShow"  />
+        <t-cell title="欧联杯-尤文加时丢球 塞维利亚总分3-2晋级决赛" hover arrow url="/pages/gameShow/gameShow"  />
+        <t-cell title="杯赛说明" hover arrow />
+        <t-cell title="欧联杯赛事说明" hover arrow />
+        <t-cell title="欧联杯-尤文加时丢球 塞维利亚总分3-2晋级决赛" hover arrow url="/pages/gameShow/gameShow"  />
+    </t-cell-group>
+</view>
+
+

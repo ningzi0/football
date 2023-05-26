@@ -1,0 +1,57 @@
+.teamTop{
+    background: #2e46a7;
+    padding: 60rpx;
+    color: #fff;
+    margin: 20rpx;
+    border-radius: 25rpx;
+    box-shadow: 0 10rpx 20rpx rgba(5, 9, 206, 0.3);
+}
+.property .span{
+    font-size: 24rpx;
+    opacity: 0.5;
+}
+.property .h3{
+    font-size: 80rpx;
+    font-weight: bold;
+    margin: 20rpx 0;
+    text-shadow: 0 10rpx 20rpx rgba(0,0,0,0.3);
+}
+.revenue-expenditure{
+    display: flex;
+    margin-top: 50rpx;
+}
+.revenue-expenditure .item{
+    margin-right: 100rpx;
+}
+.revenue-expenditure .item .font{
+    margin-top: 10rpx;
+    text-shadow: 0 10rpx 10rpx rgba(0,0,0,0.3);
+    font-size: 36rpx;
+}
+
+.team-list{
+    padding: 20rpx 30rpx;
+}
+.team-list .h3{
+    font-size: 42rpx;
+    font-weight: bold;
+    display: inline-block;
+}
+.team-list .h3::after{
+    content: "";
+    display: block;
+    height: 10rpx;
+    width: 50%;
+    background: #2e46a7;
+    margin-top: 17rpx;
+}
+
+.team-list .playerContainer{
+    margin-top: 30rpx;
+}
+
+
+
+
+
+

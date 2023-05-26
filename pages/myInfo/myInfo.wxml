@@ -1,0 +1,39 @@
+<view class="person-info">
+  <t-cell-group>
+    <t-cell title="头像" center="{{true}}" data-type="avatarUrl" bind:click="onClickCell" arrow t-class-left="order-group__left">
+      <t-image slot="note" src="/images/header.jpg" t-class="avatarUrl" mode="aspectFill" />
+    </t-cell>
+    <t-cell t-class-title="t-cell-title" title="昵称">
+      <view slot="note" class="textarea__wrapper">
+        <t-input borderless placeholder="请输入昵称" align="right"/>
+      </view>
+    </t-cell>
+    <t-cell t-class-title="t-cell-title" title="姓名">
+      <view slot="note" class="textarea__wrapper">
+        <t-input borderless placeholder="请输入真实姓名" align="right" value="{{locationState.detailAddress}}" />
+      </view>
+    </t-cell>
+    <t-cell class="mb-16" title="性别" arrow hover note="{{cityText}}" bind:click="onCityPicker" />
+    <t-cell t-class-title="t-cell-title" title="手机号">
+      <view slot="note" class="textarea__wrapper">
+        <t-input borderless placeholder="请输入手机号码" align="right" value="{{locationState.detailAddress}}" />
+      </view>
+    </t-cell>
+  </t-cell-group>
+</view>
+<view class="person-info__wrapper">
+  <view class="person-info__btn" bind:tap="openUnbindConfirm"> 保存更改 </view>
+</view>
+<t-picker
+  visible="{{cityVisible}}"
+  value="{{cityValue}}"
+  data-key="city"
+  cancelBtn="取消"
+  confirmBtn="确认"
+  bindchange="onPickerChange"
+  bindpick="onColumnChange"
+  bindcancel="onPickerCancel"
+>
+  <t-picker-item options="{{citys}}" />
+</t-picker>
+<t-toast id="t-toast" />

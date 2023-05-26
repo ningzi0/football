@@ -1,0 +1,64 @@
+<t-notice-bar
+  visible="{{true}}"
+  direction="vertical"
+  content="{{content}}"
+  prefixIcon="sound"
+  bind:click="click"
+>
+</t-notice-bar>
+
+<view class="example-search">
+  <t-search  placeholder="点击这里搜索" />
+</view>
+
+<t-grid class="block" column="{{4}}" theme="card">
+    <t-grid-item text="球员查询" url="/pages/player/player" image="{{img1}}" badge-props="{{ { count: 8 } }}" />
+    <t-grid-item text="球员交易" url="/pages/player/player" image="{{img2}}" badge-props="{{ { count: 13 } }}" />
+    <t-grid-item text="联赛信息" url="/pages/game/game" image="{{img3}}" badge-props="{{ { dot: true } }}"/>
+    <t-grid-item text="一键报分" url="/pages/fraction/fraction"  image="{{img1}}" />
+    <t-grid-item text="一键约战" image="{{img1}}" />
+    <t-grid-item text="杯赛分组" url="/pages/grouping/grouping" image="{{img3}}" />
+    <t-grid-item text="荣誉室" image="{{img3}}" url="/pages/honor/honor"/>
+    <t-grid-item text="排名" url="/pages/ranking/ranking"  image="{{img3}}" />
+</t-grid>
+
+<t-tab-bar value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}">
+  <t-tab-bar-item wx:for="{{list}}" wx:key="index" wx:for-index="idx" value="{{item.value}}" icon="{{item.icon}}" data-index="{{index}}">
+    {{item.label}}
+  </t-tab-bar-item>
+</t-tab-bar>
+
+<view class="playInfo">
+    <t-notice-bar visible="{{visible}}" prefixIcon="{{false}}" content="最新比赛信息">
+        <view slot="prefix-icon">
+            <t-icon name="error-circle-filled"></t-icon>
+        </view>
+    </t-notice-bar>
+    <view class="playInfoList">
+        <view class="t-row">
+            <view class="t-col">超级联赛</view>
+            <view class="t-col">
+                <image src="https://images.liquorbox.cn/pingqiu/1.png" mode=""/>
+                <text>2</text> : 
+                <text>1</text>
+                <image src="https://images.liquorbox.cn/pingqiu/2.png" mode=""/>
+            </view>
+        </view>
+        <view class="t-row">
+            <view class="t-col">超级联赛</view>
+            <view class="t-col">
+                <image src="https://images.liquorbox.cn/pingqiu/1.png" mode=""/>
+                <text>2</text> : 
+                <text>1</text>
+                <image src="https://images.liquorbox.cn/pingqiu/2.png" mode=""/>
+            </view>
+        </view>
+    </view>
+
+
+</view>
+
+<t-footer text="{{text}}"></t-footer>
+
+
+

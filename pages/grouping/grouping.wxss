@@ -1,0 +1,51 @@
+/* pages/grouping/grouping.wxss */
+.groupingtop{
+    display: flex;
+    background-color: #155a9e;
+    padding: 30rpx 0;
+    color: #fff;
+}
+.groupingtop text{
+    flex: 1;
+    font-size: 28rpx;
+    text-align: center;
+}
+.groupContainer{
+    background-color: #fff;
+}
+.groupContainer .A{
+    text-align: center;
+    font-size: 28rpx;
+    padding: 20rpx 0;
+    background-color: #cccccc;
+}
+.groupItem {
+    display: flex;
+}
+.groupItem:nth-child(odd){
+    background: #f2f2f2;
+}
+.groupItem .item{
+    flex: 1;
+    font-size: 28rpx;
+    padding: 20rpx 0;
+    text-align: center;
+}
+
+.rule{
+    margin-top: 20rpx;
+    border-top: 1px solid #eee;
+    padding: 30rpx;
+}
+.rule .h3{
+    font-size: 43rpx;
+    font-weight: bold;
+    padding: 20rpx 0;
+}
+.rule .p{
+    font-size: 28rpx;
+    line-height: 1.75;
+}
+
+
+

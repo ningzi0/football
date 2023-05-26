@@ -1,0 +1,142 @@
+/* pages/playerShow/playerShow.wxss */
+.playShowTop{
+    background: #272428;
+    padding: 20rpx;
+    display: flex;
+    align-items: center;
+}
+.headerPic{
+    width: 200rpx;
+    height: 200rpx;
+    background: #f5f5f5;
+    border: 2px solid #9fc0d3;
+    margin: 30rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.headerPic image{
+    width: 100%;
+    height: 100%;
+}
+.playShowInfo{
+    color: #fff;
+}
+.playShowInfo .btn{
+    display: flex;
+    margin-top:10rpx;
+}
+.playShowInfo .btn button{
+    margin-left: 0 !important;
+}
+.playShowInfoName text{
+    display: block;
+    font-size: 36rpx;
+    font-weight: bold;
+}
+.playShowInfoInfo{
+    font-size: 26rpx;
+    opacity: 0.5;
+    margin: 10rpx 0;
+}
+.playShowInfoteam image{
+    width: 50rpx;
+    height: 50rpx;
+    margin-left: 15rpx;
+}
+.playShowInfoteam{
+    display: flex;
+    font-size: 28rpx;
+    align-items: center;
+}
+.playShowInfoteam text{
+    opacity: 0.5;
+}
+
+
+.stateInfoTitle{
+    display: flex;
+    align-items: center;
+    font-size: 28rpx;
+    padding: 30rpx;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+.stateInfoListContainer{
+    display: flex;
+    font-size: 28rpx;
+}
+.stateInfoListItem{
+    width: 50%;
+    padding: 25rpx 15rpx;
+}
+.stateInfoListContainer:nth-child(even){
+    background: #fff;
+}
+.stateInfoListItem text:first-child{
+    width: 65%;
+    display: inline-block;
+    padding: 0 20rpx;
+}
+.stateInfoListItem text:last-child{
+    padding: 5rpx 10rpx;
+    color: #fff;
+    border-radius: 10rpx;
+}
+
+.LocationScore,.playerInfo{
+    margin-top: 20rpx;
+}
+.locationContainer{
+    font-size: 28rpx;
+    color: #fff;
+    text-align: center;
+    background: #fff;
+}
+.locationContainer .t-col{
+    padding:0 5rpx;
+}
+.locationContainer .mar05{
+    margin: 9rpx 0;
+}
+.left1,.left3{
+    height: 204rpx;
+    line-height: 204rpx;
+}
+.left2{
+    height: 312rpx;
+    line-height: 312rpx;
+}
+.center1,.center2,.center3{
+    height: 98rpx;
+    line-height: 98rpx;
+}
+.left1,.center1,.left2{
+    background: #00d092;
+}
+.center2{
+    background: #95db00;
+}
+.center3,.left3{
+    background: #f6f6f6;
+    color: #ababab;
+}
+
+.playerInfoLitem{
+    display: flex;
+    padding: 0 20rpx;
+}
+.playerInfoLitem text{
+    flex: 1;
+    padding: 15rpx 20rpx;
+    font-size: 28rpx;
+    color: #999;
+}
+.playerInfoLitem text:last-child{
+    text-align: right;
+    color: #000;
+    flex: 2;
+}
+
+.playerInfo{
+    padding-bottom: 35rpx;
+}

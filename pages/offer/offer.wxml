@@ -1,0 +1,64 @@
+
+
+
+<view class="playerWrap">
+    <view class="playerContainer">
+        <block wx:for="{{playerList}}">
+            <view class="playerContainerItem">
+                <t-checkbox-group bind:change="handleGroupChange" data-player="{{item.playerid}}" style="{{!showCheckBox?'display:none':'display:block'}}" options="{{options}}" />
+                <navigator url="/pages/playerShow/playerShow">
+                    <t-badge count="{{item.have}}" offset="{{ [0, 2] }}"></t-badge>
+                    <view class="playerItem">
+                        <view class="playerPic">
+                            <image src="{{item.imgSrc}}" mode="aspectFill" />
+                        </view>
+                        <view class="playerTitleInfo">
+                            <view class="playerName">
+                                <text>{{item.nameCn}}</text>
+                                <text>{{item.nameEn}}</text>
+                            </view>
+                            <view class="PersonalInfo">{{item.PersonalInfo}}</view>
+                            <view class="price">身价:{{item.price}}元</view>
+                        </view>
+                        <view class="playerInfo">
+                            <text>{{item.playerCity}}</text>
+                            <text>{{item.playerNum}}</text>
+                            <text>{{item.playerLoca}}</text>
+                        </view>
+                        <view class="playerlevel {{item.colorLetter}}"> {{item.playerLetter}} </view>
+                        <view class="playerImg">
+                            <image src="{{item.playerIcon}}" mode="" />
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+           <view class="priceNumber">
+           <view class="text">
+               请对球员进行出价
+           </view>
+            <t-stepper value="{{value}}" size="medium" max='99999' step='50' theme="filled" bind:change="handleChange" />
+           </view>
+        </block>
+    </view>
+</view>
+
+
+
+<t-toast id="t-toast" />
+<view class="button-fixed">
+    <t-button size="large" theme="primary"  shape="round" bind:tap="showVerticalText" block>提交</t-button>
+    <t-button size="large" theme="danger"  shape="round">删除</t-button>
+    <t-button size="large"  shape="round">取消</t-button>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+<view class="rankTop">
+    <view class="h1">荣誉室</view>
+    <view class="text">更新时间：2023-05-25</view>
+</view>
+
+<view class="rankContainer">
+  <view class="rankingContainer">
+        <view class="rankingCtitle">
+            <text>界数</text>
+            <text>级别</text>
+            <text>教练</text>
+            <text>球队</text>
+            <text>名次</text>
+        </view>
+        <view class="rankingContent">
+          <block wx:for="{{rank}}">
+              <view class="item">
+                  <view class="text">{{item.jie}}</view>
+                  <view class="text">{{item.level}}</view>
+                  <view class="text">{{item.coach}}</view>
+                  <view class="text">
+                    <image src="{{item.teamImg}}" mode=""/>
+                    <text>{{item.teamName}}</text>
+                  </view>
+                  <view class="text">{{item.ranking}}</view>
+              </view>
+          </block>
+        </view>
+    </view>
+  
+ 
+  
+
+
+
+
+
+    
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

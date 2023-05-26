@@ -1,0 +1,190 @@
+<view class="rankTop">
+    <view class="h1">排行榜</view>
+    <view class="text">更新时间：2023-05-25</view>
+</view>
+
+<view class="rankContainer">
+
+  <t-tabs
+  defaultValue="{{0}}"
+  bind:change="onTabsChange"
+  bind:click="onTabsClick"
+  t-class="custom-tabs"
+  t-class-content="custom-panel"
+>
+  <t-tab-panel label="杯赛排名" value="0" style="{{tabPanelstyle}}">
+    <view class="achievement">
+        <view class="title">我的成绩</view>
+        <view class="img">
+          <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+        </view>
+        <view class="name">曼城</view>
+        <view class="myrank">第15名</view>
+        <view class="myfraction">66分</view>
+    </view>
+
+    <view class="rankingContainer">
+        <view class="rankingCtitle">
+            <text>排名</text>
+            <text>球队</text>
+            <text>积分</text>
+        </view>
+        <view class="rankingContent">
+            <view class="item no1">
+                <view class="num unify">
+                  <text>1</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/hj.png" mode=""/>
+                    <text>皇家马德里</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+            <view class="item no2">
+                <view class="num unify">
+                  <text>2</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <text>曼城</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+            
+            <view class="item no3">
+                <view class="num unify">
+                  <text>3</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <text>曼城</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+            <view class="item">
+                <view class="num unify">
+                  <text>4</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <text>曼城</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+            <view class="item">
+                <view class="num unify">
+                  <text>5</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <text>曼城</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+        </view>
+    </view>
+  </t-tab-panel>
+  <t-tab-panel label="联赛排名" value="1" style="{{tabPanelstyle}}">
+    <view class="achievement">
+        <view class="title">我的成绩</view>
+        <view class="img">
+          <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+        </view>
+        <view class="name">曼城</view>
+        <view class="myrank">第3名</view>
+        <view class="myfraction">98分</view>
+    </view>
+
+    <view class="rankingContainer">
+        <view class="rankingCtitle">
+            <text>排名</text>
+            <text>球队</text>
+            <text>积分</text>
+        </view>
+        <view class="rankingContent">
+            <view class="item no1">
+                <view class="num unify">
+                  <text>1</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <text>曼城</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+            <view class="item no2">
+                <view class="num unify">
+                  <text>2</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/hj.png" mode=""/>
+                    <text>皇家马德里</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+            
+            <view class="item no3">
+                <view class="num unify">
+                  <text>3</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <text>曼城</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+            <view class="item">
+                <view class="num unify">
+                  <text>4</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <text>曼城</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+            <view class="item">
+                <view class="num unify">
+                  <text>5</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <text>曼城</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+        </view>
+    </view>
+  </t-tab-panel>
+</t-tabs>
+
+
+
+
+
+    
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

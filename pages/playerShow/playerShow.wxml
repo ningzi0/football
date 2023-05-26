@@ -1,0 +1,136 @@
+<view class="playerShow">
+    <view class="playShowTop">
+        <view class="headerPic">
+            <image src="https://images.liquorbox.cn/pingqiu/header.png" mode="" />
+        </view>
+        <view class="playShowInfo">
+            <view class="playShowInfoName">
+                <text>哈兰德</text>
+                <text>Erling Haaland</text>
+            </view>
+            <view class="playShowInfoInfo">
+                <text>年龄23岁 / 身高194cm / 体重88kg</text>
+            </view>
+            <view class="playShowInfoteam">
+                <text>曼城 / 9号 / 前锋</text>
+                <image src="https://images.liquorbox.cn/pingqiu/216.png" mode="" />
+            </view>
+            <view class="btn">
+                <t-button theme="light" size="small" bindtap="jump">强买</t-button>
+                <t-button theme="danger" variant="outline" size="small">转会</t-button>
+                <t-button size="small">下放</t-button>
+            </view>
+        </view>
+    </view>
+
+    <!-- 状态信息 -->
+    <view class="stateInfo">
+        <view class="stateInfoTitle">
+            <t-icon name="logo-windows-filled" size="40rpx" />
+            <text>状态信息</text>
+        </view>
+        <view class="stateInfoList">
+            <block wx:for="{{stateInfoList}}">
+                <view class="stateInfoListContainer">
+                    <block wx:for="{{item.stateInfoItem}}">
+                        <view class="stateInfoListItem">
+                            <text>{{item.title}}</text>
+                            <text style="background: {{item.color}};">{{item.number}}</text>
+                        </view>
+                    </block>
+                </view>
+            </block>
+        </view>
+    </view>
+    <!-- 各位置评分 -->
+    <view class="LocationScore">
+        <view class="stateInfoTitle">
+            <t-icon name="location" size="40rpx" />
+            <text>各位置评分</text>
+        </view>
+        <view class="locationContainer">
+            <t-row>
+                <t-col span="7">
+                    <view class="left1 mar05">
+                        <text>左边锋</text>
+                        <text>95</text>
+                    </view>
+                    <view class="left2 mar05">
+                        <text>左边卫</text>
+                        <text>95</text>
+                    </view>
+                    <view class="left3 mar05">
+                        <text>左后卫</text>
+                        <text>95</text>
+                    </view>
+                </t-col>
+                <t-col span="10">
+                    <view class="center1 mar05">
+                        <text>中锋</text>
+                        <text>97</text>
+                    </view>
+                    <view class="center2 mar05">
+                        <text>影锋</text>
+                        <text>94</text>
+                    </view>
+                    <view class="center2 mar05">
+                        <text>前腰</text>
+                        <text>93</text>
+                    </view>
+                    <view class="center2 mar05">
+                        <text>中前卫</text>
+                        <text>89</text>
+                    </view>
+                    <view class="center3 mar05">
+                        <text>后腰</text>
+                        <text>85</text>
+                    </view>
+                    <view class="center3 mar05">
+                        <text>中后卫</text>
+                        <text>65</text>
+                    </view>
+                    <view class="center3 mar05">
+                        <text>门将</text>
+                        <text>40</text>
+                    </view>
+                </t-col>
+                <t-col span="7">
+                    <view class="left1 mar05">
+                        <text>右边锋</text>
+                        <text>95</text>
+                    </view>
+                    <view class="left2 mar05">
+                        <text>右边卫</text>
+                        <text>95</text>
+                    </view>
+                    <view class="left3 mar05">
+                        <text>右后卫</text>
+                        <text>95</text>
+                    </view>
+                </t-col>
+            </t-row>
+        </view>
+    </view>
+
+    <!-- 球员信息 -->
+    <view class="playerInfo">
+        <view class="stateInfoTitle">
+            <t-icon name="info-circle" size="40rpx" /> 
+            <text>球员信息</text>
+        </view>
+        <view class="playerInfoList">
+            <block wx:for="{{playInfoLitem}}">
+                <view class="playerInfoLitem">
+                    <text>{{item.title}}</text>
+                    <text>{{item.content}}</text>
+                </view>
+            </block>
+        </view>
+    </view>
+
+</view>
+
+
+
+
+

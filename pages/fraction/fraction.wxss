@@ -1,0 +1,199 @@
+/* pages/fraction/fraction.wxss */
+.uploadimg{
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  background: rgba(255, 255, 255, 0.39);
+  margin: 0 20rpx;
+  padding: 20rpx 32rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 5rpx 20rpx rgba(0, 83, 217, 0.048)
+}
+.uploadimg text{
+  flex: 2;
+}
+
+.t-grid-item{
+  width: 100% !important;
+}
+.t-upload__wrapper{
+  width: 80rpx !important;
+  height: 80rpx !important;
+}
+.t-upload__add-icon{
+  background: #0052d9 !important;
+  color: #fff !important;
+  font-size: 36rpx !important;
+}
+.t-grid-item__content {
+  padding:0 !important;
+}
+.Score_infor{
+  min-height: 300rpx;
+  background: rgba(255, 255, 255, 0.39);
+  margin: 20rpx;
+  border-radius: 15rpx;
+  box-shadow: 0 5rpx 20rpx rgba(0, 83, 217, 0.048)
+}
+.Score_infor .t-cell{
+  background: none !important;
+}
+.Score_infor .t-cell .t-cell__title-text{
+  font-size: 28rpx !important;
+}
+.Score_infor .t-cell .t-cell__note{
+  font-size: 26rpx !important;
+}
+.scoreInfo_container{
+  display: flex;
+  align-items: center;
+}
+.scoreInfo_container .s_item{
+  flex: 1;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.s_item image{
+  width: 100rpx;
+  height: 100rpx;
+  display: inline-block;
+}
+.s_item text{
+  display: block;
+  font-size: 36rpx;
+  font-weight: bold;
+  padding: 10rpx 0 10rpx;
+}
+.scoreContainer{
+  display: flex;
+  align-items: center;
+}
+.score text{
+  padding: 0;
+  margin: 0 20rpx;
+}
+.score input{
+  font-size: 42rpx;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.322);
+  color: #fff;
+  padding: 30rpx 0;
+  border-radius: 10rpx;
+}
+
+.score .text{
+  font-size: 24rpx;
+  color: #999;
+  padding: 20rpx 0 0;
+}
+
+
+.block--left,
+.block--right {
+  width: 280px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.popContainer{
+  font-size: 28rpx;
+  padding: 30rpx;
+}
+.poptitle{
+  border-bottom: 1px solid #eee;
+  padding: 20rpx 0;
+}
+
+.card {
+  position: relative;
+  margin: 32rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 3rpx solid #fff;
+}
+
+.card--active {
+  border-color: #0052d9;
+}
+
+.card--active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  border: 14px solid #0052d9;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.card__icon {
+  color: #fff;
+  position: absolute;
+  left: 1.5px;
+  top: 1.5px;
+  z-index: 1;
+}
+
+.popContainer .t-icon {
+  position: absolute;
+  left: 7rpx;z-index: 5;
+}
+.popContainer .t-icon-check:before {
+  color: #fff;
+}
+.popname{
+  display: flex;
+  align-items: center;
+}
+.popname image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.popname text{
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+}
+.popConlist .card{
+  margin:20rpx 0 ;
+}
+.popConlist .t-radio--block{
+  padding: 20rpx;
+}
+.tit-search .t-icon{
+  position: static;
+}
+.t-input__wrap .t-input__content {
+  font-size: 28rpx !important;
+}
+.tit-search{
+  background-color: #fff;
+  width: 76%;
+  padding: 20rpx 20rpx 0 0;
+}
+.popConlist{
+  margin-top: 130rpx;
+  padding: 20rpx 0;
+}
+.upload{
+  padding: 20rpx;
+}
+
+
+
+.determine{
+  position: fixed;
+  bottom: 40rpx;
+  right: 20rpx;
+}
+
+
+
+
+
+
+
+

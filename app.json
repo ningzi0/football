@@ -1,0 +1,88 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/player/player",
+        "pages/playerShow/playerShow",
+        "pages/my/my",
+        "pages/transaction/transaction",
+        "pages/team/team",
+        "pages/offer/offer",
+        "pages/test/test",
+        "pages/game/game",
+        "pages/gameShow/gameShow",
+        "pages/grouping/grouping",
+        "pages/fraction/fraction",
+        "pages/ranking/ranking",
+        "pages/honor/honor",
+        "pages/my_competition/my_competition",
+        "pages/complaint/complaint",
+        "pages/myInfo/myInfo"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#f3f4f8",
+        "navigationBarTitleText": "贵州黔竞",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "t-search": "tdesign-miniprogram/search/search",
+        "t-tabs": "tdesign-miniprogram/tabs/tabs",
+        "t-tab-panel": "tdesign-miniprogram/tab-panel/tab-panel",
+        "t-row": "tdesign-miniprogram/row/row",
+        "t-col": "tdesign-miniprogram/col/col",
+        "t-avatar": "tdesign-miniprogram/avatar/avatar",
+        "t-button": "tdesign-miniprogram/button/button",
+        "t-divider": "tdesign-miniprogram/divider/divider",
+        "t-image": "tdesign-miniprogram/image/image",
+        "t-count-down": "tdesign-miniprogram/count-down/count-down",
+        "t-image-viewer": "tdesign-miniprogram/image-viewer/image-viewer",
+        "t-action-sheet": "tdesign-miniprogram/action-sheet/action-sheet",
+        "t-skeleton": "tdesign-miniprogram/skeleton/skeleton",
+        "t-icon": "tdesign-miniprogram/icon/icon",
+        "t-cell-group": "tdesign-miniprogram/cell-group/cell-group",
+        "t-cell": "tdesign-miniprogram/cell/cell",
+        "t-picker": "tdesign-miniprogram/picker/picker",
+        "t-picker-item": "tdesign-miniprogram/picker-item/picker-item",
+        "t-tag": "tdesign-miniprogram/tag/tag",
+        "t-badge": "tdesign-miniprogram/badge/badge",
+        "t-popup": "tdesign-miniprogram/popup/popup",
+        "t-stepper": "tdesign-miniprogram/stepper/stepper",
+        "t-swiper": "tdesign-miniprogram/swiper/swiper",
+        "t-swiper-nav": "tdesign-miniprogram/swiper-nav/swiper-nav",
+        "t-input": "tdesign-miniprogram/input/input",
+        "t-grid": "tdesign-miniprogram/grid/grid",
+        "t-grid-item": "tdesign-miniprogram/grid-item/grid-item",
+        "t-footer": "tdesign-miniprogram/footer/footer",
+        "t-tab-bar": "tdesign-miniprogram/tab-bar/tab-bar",
+        "t-tab-bar-item": "tdesign-miniprogram/tab-bar-item/tab-bar-item",
+        "t-notice-bar": "tdesign-miniprogram/notice-bar/notice-bar",
+        "t-sticky": "tdesign-miniprogram/sticky/sticky",
+        "t-check-tag": "tdesign-miniprogram/check-tag/check-tag",
+        "t-slider": "tdesign-miniprogram/slider/slider",
+        "t-fab": "tdesign-miniprogram/fab/fab",
+        "t-checkbox-group": "tdesign-miniprogram/checkbox-group/checkbox-group",
+        "t-checkbox": "tdesign-miniprogram/checkbox/checkbox",
+        "t-message": "tdesign-miniprogram/message/message",
+        "t-toast": "tdesign-miniprogram/toast/toast",
+        "t-upload": "tdesign-miniprogram/upload/upload",
+        "t-date-time-picker": "tdesign-miniprogram/date-time-picker/date-time-picker",
+        "t-radio-group": "tdesign-miniprogram/radio-group/radio-group",
+        "t-radio": "tdesign-miniprogram/radio/radio",
+        "t-textarea": "tdesign-miniprogram/textarea/textarea"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": ""
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": ""
+            }
+        ]
+    }
+}

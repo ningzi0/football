@@ -1,0 +1,53 @@
+<t-sticky>
+    <view class="groupingtop">
+        <text>排名</text>
+        <text>球队</text>
+        <text>场次</text>
+        <text>胜/平/负</text>
+        <text>进/失球</text>
+        <text>积分</text>
+    </view>
+</t-sticky>
+<view class="groupContainer">
+    <block wx:for="{{group}}">
+        <view class="groupContent">
+            <view class="A">{{item.A}}组</view>
+            <block wx:for="{{item.groupItem}}">
+                <view class="groupItem">
+                    <view class="item">{{item.number}}</view>
+                    <view class="item">{{item.name}}</view>
+                    <view class="item">{{item.Session}}</view>
+                    <view class="item">{{item.wdl}}</view>
+                    <view class="item">{{item.advance}}</view>
+                    <view class="item">{{item.integral}}</view>
+                </view>
+            </block>
+        </view>
+    </block>
+</view>
+
+
+<view class="rule">
+    <view class="h3">杯赛规则：</view>
+    <view class="p">小组赛以抽签形式分成八组，采用循环制，每组的最后一轮小组赛四队之间的两场比赛会同时开赛。小组赛出线规则如下:</view>
+    <view class="p">a、积分高者排名靠前</view>
+    <view class="p">b、小组中总净胜球高者排名靠前</view>
+    <view class="p">c、小组中总进球数高者排名靠前</view>
+    <view class="p">如果按照以上规则仍有两支或两支以上的球队并列，则按以下顺序依次比较以确定排名先后:</view>
+    <view class="p">d、比较并列的几队之间的胜负关系。如果仍然相等，则:</view>
+    <view class="p">e、比较并列的几队之间的净胜球数。如果仍然相等，则:</view>
+    <view class="p">f、比较并列的几队之间的总进球数。如果仍然相等，则:</view>
+    <view class="p">如果按照以上规则仍有两支或两支以上的球队并列，则按以下顺序依次比较以确定排名先后:</view>
+    <view class="p">g、公平比赛积分，即红黄牌更少的球队排名靠前:</view>
+    <view class="p">1、黄牌1分</view>
+    <view class="p">2、间接红牌 (两张黄牌产生的红牌) 3分</view>
+    <view class="p">3、直接红牌4分</view>
+    <view class="p">4、黄牌+直接红牌5分</view>
+    <view class="p">h、国际足联(FIFA)进行抽签决定。</view>
+    <view class="p">淘汰赛阶段采用单败淘汰制，90分钟战平则加时30分钟，未能分出胜负便需点球大战分胜负。淘汰赛从1/8决赛展开，由小组首名对战另一小组次名。之后的四分之一决赛、半决赛、三四名决赛 (半决赛落败方对战)至决赛会依次进行。</view>
+</view>
+
+
+
+
+

@@ -1,0 +1,142 @@
+/* pages/ranking/ranking.wxss */
+.rankTop{
+  background-color: #2f69c9;
+  color: #fff;
+  padding: 80rpx 40rpx 130rpx 40rpx;
+}
+.rankTop .h1{
+  font-size: 86rpx;
+  font-weight: bold;
+}
+.rankTop .text{
+  font-size: 28rpx;
+  opacity: 0.7;
+  margin-top: 10rpx;
+}
+
+.rankContainer{
+  background-color: #fff;
+  margin: -80rpx 20rpx 0;
+  border-radius: 20rpx ;
+  overflow: hidden;
+}
+.achievement{
+  display: flex;
+  align-items: center;
+  padding: 25rpx;
+  box-shadow: 0 10rpx 20rpx rgba(0,0,0,0.05);
+  margin: 55rpx 40rpx;
+  border-radius: 15rpx;
+}
+.achievement .title{
+  font-size: 35rpx;
+  font-weight: bold;
+  color: #2f69c9;
+  width: 15%;
+}
+.achievement .img{
+  width: 80rpx;
+  height: 80rpx;
+}
+.achievement .img image{
+  width: 100%;
+  height: 100%;
+}
+.achievement .name{
+  font-size: 36rpx;
+  font-weight: bold;
+  padding: 0 20rpx;
+  width: 18%;
+}
+
+.myrank{
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #2f69c9;
+  padding: 0 20rpx;
+}
+.myfraction{
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #2f69c9;
+  padding: 0 20rpx;
+}
+
+.rankingContainer{
+  padding: 0 30rpx;
+}
+.rankingCtitle{
+  display: flex;
+  align-items: center;
+}
+.rankingCtitle text{
+  flex: 1;
+  color: #afb3b6;
+  font-size: 30rpx;
+  padding: 0 20rpx;
+
+}
+.rankingCtitle text:nth-child(2){
+  flex: 2;
+}
+
+.rankingCtitle text:last-child{
+  text-align: right;
+}
+.rankingContent .item{
+  display: flex;
+  align-items: center;
+}
+.rankingContent .img-name{
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+.rankingContent .img-name image{
+  width: 90rpx;
+  height: 90rpx;
+}
+.rankingContent .img-name text{
+  font-size: 34rpx;
+  font-weight: bold;
+  padding: 0 15rpx;
+}
+.unify {
+  flex: 1;
+  padding: 20rpx;
+}
+.img-name{
+  flex: 3;
+}
+.jifen{
+  text-align: right;
+}
+
+.item .num text{
+  display: block;
+  width: 70rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border-radius: 50%;
+  color: #a4a8ab;
+}
+.no1 .num text{
+  background-color: #ffbe4b;
+  box-shadow: 0 5rpx 5rpx rgba(0,0,0,0.2);
+  color: #fff;
+}
+.no2 .num text{
+  background-color: #dbdee5;
+  box-shadow: 0 5rpx 5rpx rgba(0,0,0,0.2);
+  color: #fff;
+}
+.no3 .num text{
+  background-color: #ff9e70;
+  box-shadow: 0 5rpx 5rpx rgba(0,0,0,0.2);
+  color: #fff;
+}
+.jifen {
+  font-weight: bold;
+  font-size: 34rpx;
+}

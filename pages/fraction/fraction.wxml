@@ -1,0 +1,66 @@
+<!--pages/fraction/fraction.wxml-->
+<view class="uploadimg">
+  <text>上传比赛截图</text>
+  <t-upload mediaType="{{['video','image']}}" max="{{1}}" files="{{fileList}}" bind:add="handleAdd" bind:remove="handleRemove">
+  </t-upload>
+</view>
+
+<view class="Score_infor">
+  <t-cell title="选择赛事日期" hover note="{{dateText || ''}}" data-mode="date" bindtap="showPicker" class="test" arrow t-class="pannel-item" />
+  <!-- 年月日 -->
+  <t-date-time-picker title="选择日期" visible="{{dateVisible}}" mode="date" defaultValue="{{date}}" format="YYYY-MM-DD" bindchange="onConfirm" bindpick="onColumnChange" bindcancel="hidePicker" start="{{start}}" end="{{end}}" />
+  <view class="scoreInfo_container">
+    <view class="we s_item">
+      <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode="" />
+      <text>曼城</text>
+      <t-button theme="primary" size="small">我方</t-button>
+    </view>
+    <view class="score s_item">
+      <view class="scoreContainer">
+        <input type="number" value="0" /> <text>:</text> <input type="number" value="0" />
+      </view>
+      <view class="text">- 请输入双方比分 -</view>
+    </view>
+    <view class="enemy s_item">
+      <image src="https://images.liquorbox.cn/pingqiu/hj.png" mode="" />
+      <text>皇家马德里</text>
+      <t-button size="small" theme="danger" icon="caret-right-small" wx:for="{{position}}" wx:key="index" bind:tap="handlePopup" data-item="{{item}}">对方</t-button>
+    </view>
+  </view>
+
+  <t-popup visible="{{visible}}" bind:visible-change="onVisibleChange" placement="{{cur.value || 'top'}}">
+    <view class="block popContainer block--{{cur.value}}">
+      <t-sticky>
+        <view class="tit-search">
+          <t-input placeholder="搜索球队" borderless="{{true}}" suffixIcon="{{ { name: 'search', ariaLabel: '搜索' } }}" style="{{style}}" />
+          <view class="poptitle">球队列表</view>
+        </view>
+      </t-sticky>
+      <view class="popConlist">
+        <t-radio-group value="{{value}}" bind:change="onChange">
+          <view wx:for="{{pop}}" wx:key="index" class="card {{value == index ? 'card--active' : ''}}">
+            <t-icon wx:if="{{value == index}}" name="check" t-class="card__icon" />
+            <t-radio value="{{index}}" label="" icon="none" borderless>
+              <view class="popname">
+                <image src="{{item.img}}" mode="" />
+                <text>{{item.name}}</text>
+              </view>
+            </t-radio>
+          </view>
+        </t-radio-group>
+      </view>
+      
+      <view class="determine">
+        <t-button size="medium" theme="primary" shape="round">确定</t-button>
+      </view>
+
+    </view>
+  </t-popup>
+
+
+</view>
+
+
+<view class="upload">
+  <t-button size="medium" icon="chevron-up-rectangle" theme="primary" block shape="round">上传比分</t-button>
+</view>

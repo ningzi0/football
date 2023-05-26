@@ -1,0 +1,48 @@
+<view class="myheader">
+    <view class="pic">
+        <image src="https://images.liquorbox.cn/pingqiu/header.png" mode="" />
+    </view>
+    <view class="playerName">
+        <view class="name" bind:tap="Jump">朱利安-阿尔瓦雷斯 <t-icon name="chevron-right" size="32rpx" /></view>
+        <view class="p_name">
+            <view class="p_n_info">
+                <text>球队名：曼城球队</text>
+            </view>
+            <t-button size="small" theme="danger">修改</t-button>
+        </view>
+        <view class="group">
+            <text>我的组别：A组</text>
+        </view>
+    </view>
+</view>
+
+
+<view class="mycontent">
+    <t-cell-group theme="card">
+        <t-cell title="我的交易" leftIcon="layers" url="/pages/transaction/transaction" hover arrow />
+        <t-cell title="我的球队" leftIcon="internet" url="/pages/team/team" hover arrow />
+        <t-cell title="我的比赛" leftIcon="round" url="/pages/my_competition/my_competition" hover arrow />
+        <t-cell title="我的约战" leftIcon="unfold-less" hover arrow />
+    </t-cell-group>
+    <t-cell-group theme="card">
+        <t-cell title="投诉建议" leftIcon="root-list" hover arrow />
+    </t-cell-group>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<t-tab-bar value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}">
+    <t-tab-bar-item wx:for="{{list}}" wx:key="index" wx:for-index="idx" value="{{item.value}}" icon="{{item.icon}}" data-index="{{index}}">
+        {{item.label}}
+    </t-tab-bar-item>
+</t-tab-bar>
