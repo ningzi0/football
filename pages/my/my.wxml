@@ -25,6 +25,9 @@
         <t-cell title="我的约战" leftIcon="unfold-less" hover arrow />
     </t-cell-group>
     <t-cell-group theme="card">
+        <t-cell title="我的收藏" leftIcon="heart" url="/pages/collect/collect" hover arrow />
+    </t-cell-group>
+    <t-cell-group theme="card">
         <t-cell title="投诉建议" leftIcon="root-list" hover arrow />
     </t-cell-group>
 </view>

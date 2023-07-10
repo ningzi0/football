@@ -1,0 +1,84 @@
+<!--pages/other/other.wxml-->
+<view class="search">
+  <t-input prefixIcon="search" placeholder="球队中文名或教练名" type="text" clearable />
+</view>
+
+<view class="other">
+    <view class="tabsTitle">
+        <text>超级(20)</text>
+        <text>主教练</text>
+        <text>球员</text>
+        <text>余额</text>
+        <text>身价/费用</text>
+    </view>
+
+    <view class="otherContainer">
+    <block wx:for="{{other}}">
+      <navigator url="/pages/team/team" hover-class="none">
+        <view class="otherC_item">
+          <view class="flex1">
+            <image src="{{item.img}}" mode=""/>
+          </view>
+          <view class="flex1">
+              <text>{{item.coach}}</text>
+              <text>{{item.playername}}</text>
+          </view>
+          <view class="flex1">
+            <text>{{item.playerNum}}</text>
+            <text>{{item.playerNum2}}</text>
+          </view>
+          <view class="flex1">
+            <text>￥{{item.balance}}</text>
+          </view>
+          <view class="flex1">
+            <text>￥{{item.socialstatus}}</text>
+            <text>￥{{item.cost}}</text>
+          </view>
+        </view>
+      </navigator>
+
+    </block>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<t-tab-bar value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}">
+    <t-tab-bar-item wx:for="{{list}}" wx:key="index" wx:for-index="idx" value="{{item.value}}" icon="{{item.icon}}" data-index="{{index}}">
+        {{item.label}}
+    </t-tab-bar-item>
+</t-tab-bar>

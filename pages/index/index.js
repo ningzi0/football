@@ -1,8 +1,15 @@
 Component({
     data: {
+        time: 3000 * 60 * 1000,
+
         img1: 'https://images.liquorbox.cn/pingqiu/zuqiu.png',
         img2: 'https://images.liquorbox.cn/pingqiu/qiuyi.png',
         img3: 'https://images.liquorbox.cn/pingqiu/qiuxie.png',
+        img4: 'https://images.liquorbox.cn/pingqiu/fabu.png',
+        img5: 'https://images.liquorbox.cn/pingqiu/yuezhan.png',
+        img6: 'https://images.liquorbox.cn/pingqiu/fenzu.png',
+        img7: 'https://images.liquorbox.cn/pingqiu/rongyu.png',
+        img8: 'https://images.liquorbox.cn/pingqiu/paiming.png',
         text: '-- 更多功能，敬请期待 --',
         value: '0',
         list: [{
@@ -10,9 +17,14 @@ Component({
                 label: '常用工具',
                 icon: 'home',
                 url: '/pages/index/index'
+            },{
+                value: '1',
+                label: '其他球队',
+                icon: 'circle',
+                url: '/pages/other/other'
             },
             {
-                value: '1',
+                value: '2',
                 label: '我的',
                 icon: 'user',
                 url: '/pages/my/my'

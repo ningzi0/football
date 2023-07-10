@@ -1,0 +1,20 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+    <view class="logo">
+        <text>贵州黔竞</text>
+    </view>
+
+
+    <view class="button-example">
+      <t-button theme="primary" size="large" block>微信用户一键登录</t-button>
+      <t-button size="large" variant="outline" block>手机号登录/注册</t-button>
+    </view>
+
+
+    <view class="checked">
+      <t-checkbox-group value="{{current}}" bind:change="handleGroupChange" options="{{options}}" /> <view class="text">登录代表您已同意 <navigator url="">贵州黔竞服务协议、隐私政策</navigator></view>
+    </view>
+
+
+</view>
+

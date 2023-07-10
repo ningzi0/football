@@ -27,6 +27,9 @@
         <view class="rankingCtitle">
             <text>排名</text>
             <text>球队</text>
+            <text>场次</text>
+            <text>胜/平/负</text>
+            <text>进/失球</text>
             <text>积分</text>
         </view>
         <view class="rankingContent">
@@ -38,6 +41,15 @@
                     <image src="https://images.liquorbox.cn/pingqiu/hj.png" mode=""/>
                     <text>皇家马德里</text>
                 </view>
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
+                </view>
                 <view class="jifen unify">99</view>
             </view>
             <view class="item no2">
@@ -47,6 +59,16 @@
                 <view class="img-name unify">
                     <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
                     <text>曼城</text>
+                </view>
+                
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
                 </view>
                 <view class="jifen unify">99</view>
             </view>
@@ -59,6 +81,16 @@
                     <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
                     <text>曼城</text>
                 </view>
+                
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
+                </view>
                 <view class="jifen unify">99</view>
             </view>
             <view class="item">
@@ -69,6 +101,16 @@
                     <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
                     <text>曼城</text>
                 </view>
+                
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
+                </view>
                 <view class="jifen unify">99</view>
             </view>
             <view class="item">
@@ -78,6 +120,16 @@
                 <view class="img-name unify">
                     <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
                     <text>曼城</text>
+                </view>
+                
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
                 </view>
                 <view class="jifen unify">99</view>
             </view>
@@ -99,6 +151,9 @@
         <view class="rankingCtitle">
             <text>排名</text>
             <text>球队</text>
+            <text>场次</text>
+            <text>胜/平/负</text>
+            <text>进/失球</text>
             <text>积分</text>
         </view>
         <view class="rankingContent">
@@ -107,8 +162,17 @@
                   <text>1</text>
                 </view>
                 <view class="img-name unify">
-                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
-                    <text>曼城</text>
+                    <image src="https://images.liquorbox.cn/pingqiu/hj.png" mode=""/>
+                    <text>皇家马德里</text>
+                </view>
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
                 </view>
                 <view class="jifen unify">99</view>
             </view>
@@ -117,8 +181,18 @@
                   <text>2</text>
                 </view>
                 <view class="img-name unify">
-                    <image src="https://images.liquorbox.cn/pingqiu/hj.png" mode=""/>
-                    <text>皇家马德里</text>
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <text>曼城</text>
+                </view>
+                
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
                 </view>
                 <view class="jifen unify">99</view>
             </view>
@@ -131,6 +205,16 @@
                     <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
                     <text>曼城</text>
                 </view>
+                
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
+                </view>
                 <view class="jifen unify">99</view>
             </view>
             <view class="item">
@@ -141,6 +225,16 @@
                     <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
                     <text>曼城</text>
                 </view>
+                
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
+                </view>
                 <view class="jifen unify">99</view>
             </view>
             <view class="item">
@@ -150,6 +244,16 @@
                 <view class="img-name unify">
                     <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
                     <text>曼城</text>
+                </view>
+                
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
                 </view>
                 <view class="jifen unify">99</view>
             </view>

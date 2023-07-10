@@ -21,12 +21,19 @@
 .playShowInfo{
     color: #fff;
 }
-.playShowInfo .btn{
-    display: flex;
+.btn{
     margin-top:10rpx;
+    position: fixed;
+    right: 10rpx;
+    bottom: 70rpx;
+    opacity: 0.95;
+    z-index: 5;
 }
-.playShowInfo .btn button{
-    margin-left: 0 !important;
+.btn button{
+    margin: 10rpx 0;
+}
+.tags{
+    margin-top: 10rpx;
 }
 .playShowInfoName text{
     display: block;
@@ -83,7 +90,7 @@
     border-radius: 10rpx;
 }
 
-.LocationScore,.playerInfo{
+.LocationScore{
     margin-top: 20rpx;
 }
 .locationContainer{
@@ -138,5 +145,66 @@
 }
 
 .playerInfo{
-    padding-bottom: 35rpx;
+    padding: 20rpx 10rpx 35rpx;
+    background-color: #fff;
+    text-align: left;
 }
+
+
+
+.playerInfoList text{
+    display: inline-block;
+    border: 1px solid #eee;
+    padding: 10rpx;
+    margin: 10rpx;
+    border-radius: 10rpx;
+}
+.block--center{
+    width: 600rpx;
+    padding: 15rpx;
+}
+.block--center .text{
+    text-align: center;
+    font-size: 28rpx;
+    padding: 20rpx 0;
+  }
+  .block--center button{
+      margin-top: 15rpx;
+  }
+
+/* 身价记录 */
+.socialPrice .title,.socialP_list{
+    display: flex;
+    text-align: center;
+    margin:20rpx;
+    align-items: center;
+}
+.socialPrice .title text,.socialP_list .text{
+    flex: 1;
+    padding: 20rpx 0;
+}
+.socialP_list{
+    background-color: #f5f5f5;
+}
+
+
+
+
+
+/* 交易记录 */
+.trans_record .socialP_list .text image{
+    width: 60rpx;
+    height: 60rpx;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.collect{
+    background: rgba(255, 255, 255, 0.329);
+    border-radius: 50%;
+    margin-left: 10rpx;
+    padding: 8rpx;
+}
+

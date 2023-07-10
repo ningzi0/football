@@ -63,17 +63,17 @@
 }
 
 .rankingContainer{
-  padding: 0 30rpx;
+  padding: 0 0 20rpx;
 }
 .rankingCtitle{
   display: flex;
   align-items: center;
+  padding: 0 0 20rpx;
 }
 .rankingCtitle text{
   flex: 1;
   color: #afb3b6;
-  font-size: 30rpx;
-  padding: 0 20rpx;
+  font-size: 24rpx;
 
 }
 .rankingCtitle text:nth-child(2){
@@ -86,6 +86,10 @@
 .rankingContent .item{
   display: flex;
   align-items: center;
+  padding: 0 15rpx;
+}
+.rankingContent .item:nth-child(odd){
+  background: #f3f4f8;
 }
 .rankingContent .img-name{
   display: flex;
@@ -93,20 +97,19 @@
   padding-left: 0;
 }
 .rankingContent .img-name image{
-  width: 90rpx;
-  height: 90rpx;
+  width: 50rpx;
+  height: 50rpx;
 }
 .rankingContent .img-name text{
-  font-size: 34rpx;
-  font-weight: bold;
-  padding: 0 15rpx;
+  font-size: 24rpx;
+  padding: 0 0;
 }
 .unify {
   flex: 1;
-  padding: 20rpx;
+  padding: 15rpx 0rpx;
 }
 .img-name{
-  flex: 3;
+  flex: 2;
 }
 .jifen{
   text-align: right;
@@ -114,9 +117,9 @@
 
 .item .num text{
   display: block;
-  width: 70rpx;
-  height: 70rpx;
-  line-height: 70rpx;
+  width: 45rpx;
+  height: 45rpx;
+  line-height: 45rpx;
   text-align: center;
   border-radius: 50%;
   color: #a4a8ab;

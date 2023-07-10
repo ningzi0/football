@@ -1,57 +1,238 @@
+page{
+    background: #fff;
+}
 .teamTop{
     background: #2e46a7;
-    padding: 60rpx;
-    color: #fff;
-    margin: 20rpx;
-    border-radius: 25rpx;
-    box-shadow: 0 10rpx 20rpx rgba(5, 9, 206, 0.3);
+    overflow: hidden;
+    position: relative;
 }
-.property .span{
-    font-size: 24rpx;
-    opacity: 0.5;
-}
-.property .h3{
-    font-size: 80rpx;
-    font-weight: bold;
-    margin: 20rpx 0;
-    text-shadow: 0 10rpx 20rpx rgba(0,0,0,0.3);
-}
-.revenue-expenditure{
-    display: flex;
-    margin-top: 50rpx;
-}
-.revenue-expenditure .item{
-    margin-right: 100rpx;
-}
-.revenue-expenditure .item .font{
-    margin-top: 10rpx;
-    text-shadow: 0 10rpx 10rpx rgba(0,0,0,0.3);
-    font-size: 36rpx;
-}
-
-.team-list{
-    padding: 20rpx 30rpx;
-}
-.team-list .h3{
-    font-size: 42rpx;
-    font-weight: bold;
-    display: inline-block;
-}
-.team-list .h3::after{
-    content: "";
+.teamTop .bg{
+    width: 600rpx;
+    height: 600rpx;
+    opacity: 0.02;
     display: block;
-    height: 10rpx;
-    width: 50%;
-    background: #2e46a7;
-    margin-top: 17rpx;
+    left: 50%;
+    margin-left: -300rpx;
+    position: absolute;
 }
 
-.team-list .playerContainer{
-    margin-top: 30rpx;
+.teamTop_container{
+    display: flex;
+    padding: 40rpx;
+}
+.teamTop_container .teamTop_item{
+    flex: 1;
+}
+.teamTop_container .teamTop_content{
+    flex: 2;
+}
+
+.name{
+    color: #fff;
+}
+.name .cnName{
+    font-size: 56rpx;
+    font-weight: bold;
+}
+.name .enName{
+    font-size: 28rpx;
+    opacity: 0.7;
+    padding: 15rpx 0 30rpx;
+}
+
+.teamInfo{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 20rpx 0;
+}
+.teamInfoItem{
+    flex: 1;
+}
+.teamInfoNum{
+    font-size: 46rpx;
+    font-weight: bold;
+}
+.teamInfoText{
+    font-size: 28rpx;
+    opacity: 0.7;
+    margin: 10rpx 0;
+}
+.teamTop_img{
+    text-align: right;
+}
+.teamTop_img image{
+    width: 150rpx;
+    height: 150rpx;
+}
+.coach{
+    padding: 30rpx;
+}
+.coachCon{
+    background: #f3f4f8;
+    padding: 30rpx;
+    border-radius: 15rpx;
+    display: flex;
+    align-items: center;
+}
+.coachCon .img image{
+    width: 100rpx;
+    height: 100rpx;
+    display: block;
+    border-radius: 10rpx;
+}
+.coachText{
+    padding: 0 20rpx;
+}
+.coachName{
+    font-size: 32rpx;
+}
+.coachTxt{
+    color: #999;
+    margin: 10rpx 0 0;
+}
+
+
+.teamlistI_title,.financeTitle{
+    display: flex;
+    align-items: center;
+    background: #f3f4f8;
+    padding: 0 20rpx;
+}
+.teamlistI_title text,.financeTitle text{
+    flex: 1;
+    padding: 20rpx;
+    font-size: 28rpx;
+    color: #9fa0a4;
+}
+.financeTitle text:first-child,.financeTitle text:last-child{
+    flex: 2;
+}
+.financeTitle text{
+    text-align: center;
+}
+.teamlistI_title text:first-child{
+    font-size: 34rpx;
+    font-weight: bold;
+    flex: 3;
+    color: #000;
+}
+
+.teamlistI_con .item{
+    display: flex;
+    align-items: center;
+}
+
+.teamlistI_con .teamlistI_c_item{
+    padding: 30rpx;
+    flex: 1;
+}
+.teamlistI_con .teamlistI_c_item:first-child{
+    display: flex;
+    align-items: center;
+    flex: 3;
+}
+.teamlistI_con .teamlistI_c_item:first-child image{
+    width: 100rpx;
+    height: 100rpx;
+    border: 1px solid #f0f0f0;
+}
+.teamlistI_con .teamlistI_c_item text{
+    display: block;
+}
+.teamlistI_con .teamlistI_c_item:first-child .info{
+    padding: 0 0 0 20rpx;
+}
+.teamlistI_con .teamlistI_c_item text:first-child{
+    font-size: 34rpx;
+}
+.teamlistI_con .teamlistI_c_item text:last-child{
+    font-size: 24rpx;
+    color: #a5a4a9;
+    padding: 10rpx 0 0;
+}
+.teamlistI_con .teamlistI_c_item:last-child text{
+    font-size: 34rpx;
+    color: #000;
 }
 
 
 
+.financeContent{
+    display: flex;
+}
+.financeC_item{
+    flex: 1;
+    text-align: center;
+    padding: 30rpx 20rpx;
+    border-bottom: 1px solid #eee;
+}
+.financeC_item text{
+    display: block;
+}
+.financeC_item:last-child,.financeC_item:first-child{
+    flex: 2;
+}
+
+
+
+
+/* 荣誉 */
+.honor{
+    padding: 30rpx 0;
+    background: #f3f4f8;
+}
+.t-cell__left image{
+    width: 66rpx;
+    height: 66rpx;
+}
+/* 赛程 */
+.courseItem .date{
+    background: #f3f4f8;
+    padding: 30rpx;
+}
+.courseContainer{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+.courseContainer .flex{
+    flex: 2;
+    text-align: center;
+    padding: 10rpx;
+    
+}
+
+.courseContainer .flex:first-child,.courseContainer .flex:last-child{
+    flex: 1;
+    color: #999;
+}
+.courseContainer .flex image{
+    width: 70rpx;
+    height: 70rpx;
+}
+.courseContainer .flex .h3{
+    font-size: 34rpx;
+    font-weight: bold;
+}
+.dealItem{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+.dealItem .d_flex{
+    flex: 1;
+    text-align: center;
+    padding: 20rpx 0;
+}
+.dealItem .d_flex .h3{
+    font-size: 34rpx;
+    font-weight: bold;
+}
+.dealItem .d_flex image{
+    width: 70rpx;
+    height: 70rpx;
+}
 
 
 

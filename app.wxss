@@ -6,6 +6,7 @@
 } */
 page{
     background: #f3f4f8;
+    --td-brand-color: #2e46a7;
 }
 
 

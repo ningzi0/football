@@ -14,123 +14,202 @@
             <view class="playShowInfoteam">
                 <text>曼城 / 9号 / 前锋</text>
                 <image src="https://images.liquorbox.cn/pingqiu/216.png" mode="" />
+                <view class="collect">
+                    <t-icon name="heart" size="36rpx" />
+                </view>
             </view>
-            <view class="btn">
-                <t-button theme="light" size="small" bindtap="jump">强买</t-button>
-                <t-button theme="danger" variant="outline" size="small">转会</t-button>
-                <t-button size="small">下放</t-button>
+            <view class="tags">
+                <t-tag class="margin-16" variant="light" theme="success">ID:001 中国 午后凌风足球俱乐部</t-tag>
             </view>
         </view>
     </view>
 
-    <!-- 状态信息 -->
-    <view class="stateInfo">
-        <view class="stateInfoTitle">
-            <t-icon name="logo-windows-filled" size="40rpx" />
-            <text>状态信息</text>
+    <!-- 挂牌输入金额弹窗 -->
+    <t-popup visible="{{visible}}" bind:visible-change="onVisibleChange" placement="{{cur.value || 'top'}}">
+        <view class="block block--{{cur.value}}">
+            <view class="text">输入价格</view>
+            <t-input placeholder="请输入金额" type="number" borderless="{{true}}" suffixIcon="{{ { name: 'money-circle', ariaLabel: '金额' } }}" style="{{style}}" />
+            <t-button theme="primary" size="medium" block>确定</t-button>
         </view>
-        <view class="stateInfoList">
-            <block wx:for="{{stateInfoList}}">
-                <view class="stateInfoListContainer">
-                    <block wx:for="{{item.stateInfoItem}}">
-                        <view class="stateInfoListItem">
-                            <text>{{item.title}}</text>
-                            <text style="background: {{item.color}};">{{item.number}}</text>
+    </t-popup>
+
+
+    <!-- 下放确认对话框 -->
+    <t-dialog visible="{{showConfirm}}" title="是否确认下放" content="" confirm-btn="{{ confirmBtn }}" cancel-btn="取消" bind:confirm="closeDialog" bind:cancel="closeDialog" />
+
+    <view class="btn">
+        <t-button theme="primary" size="small" bindtap="jump" block>强买</t-button>
+        <t-button theme="light" variant="outline" size="small" block>转会</t-button>
+        <t-button size="small" block data-key="showConfirm" bind:tap="showDialog">下放</t-button>
+        <t-button size="small" theme="danger" block wx:for="{{position}}" wx:key="index" bind:tap="handlePopup" data-item="{{item}}">挂牌</t-button>
+    </view>
+
+
+    <t-tabs defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs" t-class-content="custom-panel">
+        <t-tab-panel label="球员信息" value="0" style="{{tabPanelstyle}}">
+            <!-- 状态信息 -->
+            <view class="stateInfo">
+                <view class="stateInfoTitle">
+                    <t-icon name="logo-windows-filled" size="40rpx" />
+                    <text>状态信息</text>
+                </view>
+                <view class="stateInfoList">
+                    <block wx:for="{{stateInfoList}}">
+                        <view class="stateInfoListContainer">
+                            <block wx:for="{{item.stateInfoItem}}">
+                                <view class="stateInfoListItem">
+                                    <text>{{item.title}}</text>
+                                    <text style="background: {{item.color}};">{{item.number}}</text>
+                                </view>
+                            </block>
                         </view>
                     </block>
                 </view>
-            </block>
-        </view>
-    </view>
-    <!-- 各位置评分 -->
-    <view class="LocationScore">
-        <view class="stateInfoTitle">
-            <t-icon name="location" size="40rpx" />
-            <text>各位置评分</text>
-        </view>
-        <view class="locationContainer">
-            <t-row>
-                <t-col span="7">
-                    <view class="left1 mar05">
-                        <text>左边锋</text>
-                        <text>95</text>
-                    </view>
-                    <view class="left2 mar05">
-                        <text>左边卫</text>
-                        <text>95</text>
-                    </view>
-                    <view class="left3 mar05">
-                        <text>左后卫</text>
-                        <text>95</text>
-                    </view>
-                </t-col>
-                <t-col span="10">
-                    <view class="center1 mar05">
-                        <text>中锋</text>
-                        <text>97</text>
-                    </view>
-                    <view class="center2 mar05">
-                        <text>影锋</text>
-                        <text>94</text>
-                    </view>
-                    <view class="center2 mar05">
-                        <text>前腰</text>
-                        <text>93</text>
-                    </view>
-                    <view class="center2 mar05">
-                        <text>中前卫</text>
-                        <text>89</text>
-                    </view>
-                    <view class="center3 mar05">
-                        <text>后腰</text>
-                        <text>85</text>
-                    </view>
-                    <view class="center3 mar05">
-                        <text>中后卫</text>
-                        <text>65</text>
-                    </view>
-                    <view class="center3 mar05">
-                        <text>门将</text>
-                        <text>40</text>
-                    </view>
-                </t-col>
-                <t-col span="7">
-                    <view class="left1 mar05">
-                        <text>右边锋</text>
-                        <text>95</text>
-                    </view>
-                    <view class="left2 mar05">
-                        <text>右边卫</text>
-                        <text>95</text>
-                    </view>
-                    <view class="left3 mar05">
-                        <text>右后卫</text>
-                        <text>95</text>
-                    </view>
-                </t-col>
-            </t-row>
-        </view>
-    </view>
-
-    <!-- 球员信息 -->
-    <view class="playerInfo">
-        <view class="stateInfoTitle">
-            <t-icon name="info-circle" size="40rpx" /> 
-            <text>球员信息</text>
-        </view>
-        <view class="playerInfoList">
-            <block wx:for="{{playInfoLitem}}">
-                <view class="playerInfoLitem">
-                    <text>{{item.title}}</text>
-                    <text>{{item.content}}</text>
+            </view>
+            <!-- 各位置评分 -->
+            <view class="LocationScore">
+                <view class="stateInfoTitle">
+                    <t-icon name="location" size="40rpx" />
+                    <text>各位置评分</text>
                 </view>
-            </block>
-        </view>
-    </view>
+                <view class="locationContainer">
+                    <t-row>
+                        <t-col span="7">
+                            <view class="left1 mar05">
+                                <text>左边锋</text>
+                                <text>95</text>
+                            </view>
+                            <view class="left2 mar05">
+                                <text>左边卫</text>
+                                <text>95</text>
+                            </view>
+                            <view class="left3 mar05">
+                                <text>左后卫</text>
+                                <text>95</text>
+                            </view>
+                        </t-col>
+                        <t-col span="10">
+                            <view class="center1 mar05">
+                                <text>中锋</text>
+                                <text>97</text>
+                            </view>
+                            <view class="center2 mar05">
+                                <text>影锋</text>
+                                <text>94</text>
+                            </view>
+                            <view class="center2 mar05">
+                                <text>前腰</text>
+                                <text>93</text>
+                            </view>
+                            <view class="center2 mar05">
+                                <text>中前卫</text>
+                                <text>89</text>
+                            </view>
+                            <view class="center3 mar05">
+                                <text>后腰</text>
+                                <text>85</text>
+                            </view>
+                            <view class="center3 mar05">
+                                <text>中后卫</text>
+                                <text>65</text>
+                            </view>
+                            <view class="center3 mar05">
+                                <text>门将</text>
+                                <text>40</text>
+                            </view>
+                        </t-col>
+                        <t-col span="7">
+                            <view class="left1 mar05">
+                                <text>右边锋</text>
+                                <text>95</text>
+                            </view>
+                            <view class="left2 mar05">
+                                <text>右边卫</text>
+                                <text>95</text>
+                            </view>
+                            <view class="left3 mar05">
+                                <text>右后卫</text>
+                                <text>95</text>
+                            </view>
+                        </t-col>
+                    </t-row>
+                </view>
+            </view>
+
+            <!-- 球员信息 -->
+            <view class="playerInfo">
+                <view class="playerInfoList">
+                    <text>踩单车</text>
+                    <text>两次触球</text>
+                    <text>压步转弯</text>
+                    <text>吊射控制</text>
+                    <text>急升射门</text>
+                    <text>杂技般进球</text>
+                    <text>接球直接射门</text>
+                    <text>插花脚</text>
+                    <text>点球专家</text>
+                    <text>蛊惑招</text>
+                </view>
+            </view>
+
+        </t-tab-panel>
+        <t-tab-panel label="交易记录" value="1" style="{{tabPanelstyle}}">
+            <view class="socialPrice trans_record">
+                <view class="title">
+                    <text>时间</text>
+                    <text>转出</text>
+                    <text>渠道</text>
+                    <text>转入</text>
+                    <text>金额</text>
+                </view>
+
+                <view class="socialP_list">
+                    <view class="text">2023-05-17 03:30</view>
+                    <view class="text">
+                        <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode="" />
+                        <text>曼城</text>
+                    </view>
+                    <view class="text">竞拍</view>
+                    <view class="text">
+                        <image src="https://images.liquorbox.cn/pingqiu/hj.png" mode="" />
+                        <text>皇家</text>
+                    </view>
+                    <view class="text">
+                        <t-tag class="margin-16" theme="warning">2000</t-tag>
+                    </view>
+                </view>
+
+
+            </view>
+
+        </t-tab-panel>
+        <t-tab-panel label="身价记录" value="2" style="{{tabPanelstyle}}">
+            <view class="socialPrice">
+                <view class="title">
+                    <text>日期</text>
+                    <text>教练</text>
+                    <text>身价</text>
+                </view>
+
+                <view class="socialP_list">
+                    <view class="text">2023-05-17</view>
+                    <view class="text">何浩</view>
+                    <view class="text">
+                        <t-tag class="margin-16" theme="warning">2000</t-tag>
+                    </view>
+                </view>
+
+
+            </view>
+
+        </t-tab-panel>
+    </t-tabs>
+
+
+
+
+
+
+
 
 </view>
-
-
-
-
-

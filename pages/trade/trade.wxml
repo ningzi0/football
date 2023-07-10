@@ -1,0 +1,118 @@
+<!--pages/trade/trade.wxml-->
+<view class="trade">
+
+  <t-tabs defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs" t-class-content="custom-panel">
+    <t-tab-panel label="转会" value="0">
+
+      <t-tabs theme="tag" defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs" t-class-content="custom-panel">
+        <t-tab-panel label="全部转会" value="0">
+          <view class="playerWrap">
+            <view class="titleText">
+              <text>头像</text>
+              <text>球员信息</text>
+              <text>出价</text>
+              <text>状态</text>
+            </view>
+
+            <view class="playerContainer">
+              <block wx:for="{{playerList}}">
+                <view class="playerContainerItem">
+                  <t-checkbox-group bind:change="handleGroupChange" data-player="{{item.playerid}}" style="{{!showCheckBox?'display:none':'display:block'}}" options="{{options}}" />
+                  <navigator url="/pages/playerShow/playerShow">
+                    <t-badge count="{{item.have}}" offset="{{ [0, 2] }}"></t-badge>
+                    <view class="playerItem">
+                      <view class="playerPic">
+                        <image src="{{item.imgSrc}}" mode="aspectFill" />
+                      </view>
+                      <view class="playerTitleInfo">
+                        <view class="playerName">
+                          <text>{{item.nameCn}}</text>
+                          <text>{{item.nameEn}}</text>
+                        </view>
+                        <view class="PersonalInfo">{{item.playerInfo}}</view>
+                        <view class="PersonalInfo">{{item.PersonalInfo}}</view>
+                      </view>
+                      <view class="playerlevel {{item.colorLetter}}"> {{item.playerLetter}} </view>
+                      <view class="playerstate">
+                        <t-button theme="{{item.theme}}" size="small">{{item.state}}</t-button>
+                      </view>
+                    </view>
+                  </navigator>
+                </view>
+              </block>
+            </view>
+          </view>
+        </t-tab-panel>
+        <t-tab-panel label="我的转会" value="1">选项二内容</t-tab-panel>
+      </t-tabs>
+
+
+    </t-tab-panel>
+    <t-tab-panel label="强买" value="1">
+
+      <t-tabs theme="tag" defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs" t-class-content="custom-panel">
+        <t-tab-panel label="全部强买" value="0">选项一内容</t-tab-panel>
+        <t-tab-panel label="我的强买" value="1">选项二内容</t-tab-panel>
+      </t-tabs>
+
+    </t-tab-panel>
+    <t-tab-panel label="海摘" value="2">
+
+      <t-tabs theme="tag" defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs" t-class-content="custom-panel">
+        <t-tab-panel label="全部海摘" value="0">
+          <view class="playerWrap">
+            <view class="playerContainer">
+              <block wx:for="{{playerList2}}">
+                <view class="playerContainerItem">
+                  <t-checkbox-group bind:change="handleGroupChange" data-player="{{item.playerid}}" style="{{!showCheckBox?'display:none':'display:block'}}" options="{{options}}" />
+                  <navigator url="/pages/playerShow/playerShow">
+                    <t-badge count="{{item.have}}" offset="{{ [0, 2] }}"></t-badge>
+                    <view class="playerItem">
+                      <view class="playerPic">
+                        <image src="{{item.imgSrc}}" mode="aspectFill" />
+                      </view>
+                      <view class="playerTitleInfo">
+                        <view class="playerName">
+                          <text>{{item.nameCn}}</text>
+                          <text>{{item.nameEn}}</text>
+                        </view>
+                        <view class="PersonalInfo">{{item.playerInfo}}</view>
+                        <view class="PersonalInfo">{{item.PersonalInfo}}</view>
+                      </view>
+                      <view class="playerlevel">
+                         <view class="text"><t-tag class="margin-16" variant="light" theme="warning">最高价：{{item.playerLetter}}</t-tag> </view>
+                         <view class="text"><t-tag class="margin-16" variant="light" theme="warning">我出价：{{item.playerLetter}}</t-tag> </view>
+                       </view>
+                      <view class="playerstate">
+                        <t-button theme="{{item.theme}}" size="small">{{item.state}}</t-button>
+                      </view>
+                    </view>
+                  </navigator>
+                </view>
+                <view class="priceNumber">
+                  <view class="text">
+                    请对球员进行出价
+                  </view>
+                  <t-stepper value="{{value}}" size="medium" max='99999' step='50' theme="filled" bind:change="handleChange" />
+                  <t-button theme="light" size="small">确认</t-button>
+                </view>
+              </block>
+            </view>
+          </view>
+        </t-tab-panel>
+        <t-tab-panel label="当前海摘" value="1">选项二内容</t-tab-panel>
+        <t-tab-panel label="我的海摘" value="2">选项三内容</t-tab-panel>
+      </t-tabs>
+
+    </t-tab-panel>
+    <t-tab-panel label="挂牌" value="3">
+
+      <t-tabs theme="tag" defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs" t-class-content="custom-panel">
+        <t-tab-panel label="全部挂牌" value="0">选项一内容</t-tab-panel>
+        <t-tab-panel label="当前挂牌" value="1">选项二内容</t-tab-panel>
+        <t-tab-panel label="我的挂牌" value="2">选项三内容</t-tab-panel>
+      </t-tabs>
+
+    </t-tab-panel>
+  </t-tabs>
+</view>

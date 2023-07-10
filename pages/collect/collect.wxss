@@ -1,0 +1,12 @@
+/* pages/collect/collect.wxss */
+.playerContainerItem {
+  display: flex;
+  background: #fff;
+  align-items: center;
+  /* border-bottom: 1px solid #eee; */
+  padding: 15rpx;
+  position: relative;
+  margin: 20rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 5rpx 10rpx rgba(85, 131, 177, 0.05);
+}

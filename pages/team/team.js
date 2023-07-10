@@ -1,156 +1,68 @@
 Component({
     data: {
-        playerList: [{
-            imgSrc: 'https://images.liquorbox.cn/pingqiu/header.png',
-            nameCn: '哈兰德',
-            nameEn: 'Erling Haaland',
-            PersonalInfo: '23岁 194cm 88kg',
-            playerCity: '曼城',
-            playerNum: '9号',
-            playerLoca: '前锋',
-            playerLetter: 'A',
-            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
-            colorLetter: 'colorA',
-            playerid:1,
-            have:'拥有',
-            price:'一万'
-        },
-        {
-            imgSrc: 'https://images.liquorbox.cn/pingqiu/header.png',
-            nameCn: '朱利安-阿尔瓦雷斯',
-            nameEn: 'Julián Álvarez',
-            PersonalInfo: '24岁 170cm 71kg',
-            playerCity: '曼城',
-            playerNum: '19号',
-            playerLoca: '前锋',
-            playerLetter: 'B',
-            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
-            colorLetter: 'colorB',
-            playerid:1,
-            have:'拥有',
-            price:'一万'
-        },
-        {
-            imgSrc: 'https://images.liquorbox.cn/pingqiu/header.png',
-            nameCn: '朱利安-阿尔瓦雷斯',
-            nameEn: 'Julián Álvarez',
-            PersonalInfo: '24岁 170cm 71kg',
-            playerCity: '曼城',
-            playerNum: '19号',
-            playerLoca: '前锋',
-            playerLetter: 'C',
-            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
-            colorLetter: 'colorC',
-            playerid:1,
-            price:'一万'
-        },
-        {
-            imgSrc: 'https://images.liquorbox.cn/pingqiu/header.png',
-            nameCn: '哈兰德',
-            nameEn: 'Erling Haaland',
-            PersonalInfo: '23岁 194cm 88kg',
-            playerCity: '曼城',
-            playerNum: '9号',
-            playerLoca: '前锋',
-            playerLetter: 'A',
-            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
-            colorLetter: 'colorA',
-            playerid:1
-        },
-        {
-            imgSrc: 'https://images.liquorbox.cn/pingqiu/header.png',
-            nameCn: '哈兰德',
-            nameEn: 'Erling Haaland',
-            PersonalInfo: '23岁 194cm 88kg',
-            playerCity: '曼城',
-            playerNum: '9号',
-            playerLoca: '前锋',
-            playerLetter: 'A',
-            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
-            colorLetter: 'colorA',
-            playerid:1
-        },
-        {
-            imgSrc: 'https://images.liquorbox.cn/pingqiu/header.png',
-            nameCn: '哈兰德',
-            nameEn: 'Erling Haaland',
-            PersonalInfo: '23岁 194cm 88kg',
-            playerCity: '曼城',
-            playerNum: '9号',
-            playerLoca: '前锋',
-            playerLetter: 'A',
-            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
-            colorLetter: 'colorA',
-            playerid:1
-        },
-        {
-            imgSrc: 'https://images.liquorbox.cn/pingqiu/header.png',
-            nameCn: '哈兰德',
-            nameEn: 'Erling Haaland',
-            PersonalInfo: '23岁 194cm 88kg',
-            playerCity: '曼城',
-            playerNum: '9号',
-            playerLoca: '前锋',
-            playerLetter: 'A',
-            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
-            colorLetter: 'colorA',
-            playerid:1
-        },
-        {
-            imgSrc: 'https://images.liquorbox.cn/pingqiu/header.png',
-            nameCn: '哈兰德',
-            nameEn: 'Erling Haaland',
-            PersonalInfo: '23岁 194cm 88kg',
-            playerCity: '曼城',
-            playerNum: '9号',
-            playerLoca: '前锋',
-            playerLetter: 'A',
-            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
-            colorLetter: 'colorA',
-            playerid:1
-        },
-        {
-            imgSrc: 'https://images.liquorbox.cn/pingqiu/header.png',
-            nameCn: '哈兰德',
-            nameEn: 'Erling Haaland',
-            PersonalInfo: '23岁 194cm 88kg',
-            playerCity: '曼城',
-            playerNum: '9号',
-            playerLoca: '前锋',
-            playerLetter: 'A',
-            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
-            colorLetter: 'colorA',
-            playerid:1
-        },
-        {
-            imgSrc: 'https://images.liquorbox.cn/pingqiu/header.png',
-            nameCn: '哈兰德',
-            nameEn: 'Erling Haaland',
-            PersonalInfo: '23岁 194cm 88kg',
-            playerCity: '曼城',
-            playerNum: '9号',
-            playerLoca: '前锋',
-            playerLetter: 'A',
-            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
-            colorLetter: 'colorA',
-            playerid:1
-        },
-        {
-            imgSrc: 'https://images.liquorbox.cn/pingqiu/header.png',
-            nameCn: '哈兰德',
-            nameEn: 'Erling Haaland',
-            PersonalInfo: '23岁 194cm 88kg',
-            playerCity: '曼城',
-            playerNum: '9号',
-            playerLoca: '前锋',
-            playerLetter: 'A',
-            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
-            colorLetter: 'colorA',
-            playerid:1
-        },
-    ]
-
-        
+      teamlist:[{
+        title:'前锋',
+        content:[{
+          img:'https://images.liquorbox.cn/pingqiu/haaland.png',
+          name:'哈兰德',
+          info:'37岁 187cm 84kg',
+          loca:'前锋',
+          locaText:'偷猎者',
+          price:'2000'
+        },{
+          img:'https://images.liquorbox.cn/pingqiu/alvarez.png',
+          name:'阿尔瓦雷斯',
+          info:'37岁 187cm 84kg',
+          loca:'前锋',
+          locaText:'偷猎者',
+          price:'2000'
+        },{
+          img:'http://www.sinaimg.cn/ty/opta/player150/56764.png',
+          name:'莱万多夫斯基',
+          info:'37岁 187cm 84kg',
+          loca:'前锋',
+          locaText:'偷猎者',
+          price:'2000'
+        },{
+          img:'http://www.sinaimg.cn/ty/opta/player150/19927.png',
+          name:'本泽马',
+          info:'37岁 187cm 84kg',
+          loca:'前锋',
+          locaText:'偷猎者',
+          price:'2000'
+        }]
+      },{
+        title:'中场',
+        content:[{
+          img:'http://www.sinaimg.cn/ty/opta/player150/178880.png',
+          name:'门德兹',
+          info:'37岁 187cm 84kg',
+          loca:'前锋',
+          locaText:'偷猎者',
+          price:'2000'
+        },{
+          img:'http://www.sinaimg.cn/ty/opta/player150/223255.png',
+          name:'巴尔维德',
+          info:'37岁 187cm 84kg',
+          loca:'前锋',
+          locaText:'偷猎者',
+          price:'2000'
+        },{
+          img:'http://www.sinaimg.cn/ty/opta/player150/119718.png',
+          name:'卡拉斯科',
+          info:'37岁 187cm 84kg',
+          loca:'前锋',
+          locaText:'偷猎者',
+          price:'2000'
+        },{
+          img:'http://www.sinaimg.cn/ty/opta/player150/248507.png',
+          name:'卡米洛',
+          info:'37岁 187cm 84kg',
+          loca:'前锋',
+          locaText:'偷猎者',
+          price:'2000'
+        }]
+      }]
       
     },
   

@@ -1,74 +1,170 @@
 <view class="teamTop">
-    <view class="property">
-        <view class="span">球队总资产(元)</view>
-        <view class="h3">8720.99</view>
-        <view class="revenue-expenditure">
-            <view class="item">
-                <view class="revenue">
-                    <view class="span">累计收入(元)</view>
-                    <view class="font">21.00</view>
+    <image class="bg" src="https://images.liquorbox.cn/pingqiu/mc.png" mode="" />
+    <view class="teamTop_container">
+        <view class="teamTop_item teamTop_content">
+            <view class="name">
+                <view class="cnName">曼城</view>
+                <view class="enName">Manchester City</view>
+            </view>
+            <view class="teamInfo">
+                <view class="teamInfoItem">
+                    <view class="teamInfoNum">21+1</view>
+                    <view class="teamInfoText">球员数量</view>
+                </view>
+                <view class="teamInfoItem">
+                    <view class="teamInfoNum">38300</view>
+                    <view class="teamInfoText">总身价</view>
                 </view>
             </view>
-            <view class="item">
-                <view class="expenditure">
-                    <view class="span">累计支出(元)</view>
-                    <view class="font">5898.80</view>
-                </view>
-            </view>
+        </view>
+        <view class="teamTop_item teamTop_img">
+            <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode="" />
         </view>
     </view>
 </view>
 
-<view class="team-list">
-    <view class="h3">球队列表</view>
-    <view class="playerContainer">
-        <block wx:for="{{playerList}}">
-            <view class="playerContainerItem">
-                <t-checkbox-group bind:change="handleGroupChange" data-player="{{item.playerid}}" style="{{!showCheckBox?'display:none':'display:block'}}" options="{{options}}" />
-                <navigator url="/pages/playerShow/playerShow">
-                    <t-badge count="{{item.have}}" offset="{{ [0, 2] }}"></t-badge>
-                    <view class="playerItem">
-                        <view class="playerPic">
-                            <image src="{{item.imgSrc}}" mode="aspectFill" />
-                        </view>
-                        <view class="playerTitleInfo">
-                            <view class="playerName">
-                                <text>{{item.nameCn}}</text>
-                                <text>{{item.nameEn}}</text>
-                            </view>
-                            <view class="PersonalInfo">{{item.PersonalInfo}}</view>
-                            <view class="price">身价:{{item.price}}元</view>
-                        </view>
-                        <view class="playerInfo">
-                            <text>{{item.playerCity}}</text>
-                            <text>{{item.playerNum}}</text>
-                            <text>{{item.playerLoca}}</text>
-                        </view>
-                        <view class="playerlevel {{item.colorLetter}}"> {{item.playerLetter}} </view>
-                        <view class="playerImg">
-                            <image src="{{item.playerIcon}}" mode="" />
-                        </view>
+<t-tabs defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs" t-class-content="custom-panel">
+    <t-tab-panel label="荣誉" value="2">
+        <view class="honor">
+            <t-cell-group theme="card">
+                <t-cell title="英格兰顶级联赛冠军" note="2023-06-02" image="https://images.liquorbox.cn/pingqiu/jinpai.png" hover  />
+                <t-cell title="联赛杯亚军" note="2023-06-02" image="https://images.liquorbox.cn/pingqiu/yinpai.png" hover  />
+                <t-cell title="社区盾杯季军" note="2023-06-02" image="https://images.liquorbox.cn/pingqiu/tongpai.png" hover  />
+                <t-cell title="社区盾杯季军" note="2023-06-02" image="https://images.liquorbox.cn/pingqiu/tongpai.png" hover  />
+                <t-cell title="社区盾杯季军" note="2023-06-02" image="https://images.liquorbox.cn/pingqiu/tongpai.png" hover  />
+            </t-cell-group>
+
+
+        </view>
+    </t-tab-panel>
+    <t-tab-panel label="赛程" value="1">
+        <view class="course">
+            <view class="courseItem">
+                <view class="date">2023年6月2日 星期五</view>
+                <view class="courseContainer">
+                    <view class="flex">
+                        <text>15:00</text>
                     </view>
-                </navigator>
+                    <view class="flex">
+                        <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                        <view class="h3">曼城</view>
+                    </view>
+                    <view class="flex">
+                        <text>U21联赛第4轮</text>
+                    </view>
+                    <view class="flex">
+                        <image src="https://images.liquorbox.cn/pingqiu/hj.png" mode=""/>
+                        <view class="h3">皇家马德里</view>
+                    </view>
+                    <view class="flex">
+                        <text>未赛</text>
+                    </view>
+                </view>
             </view>
-        </block>
-    </view>
-</view>
+
+
+        </view>
+    </t-tab-panel>
+    <t-tab-panel label="阵容" value="0">
+        <view class="coach">
+            <view class="coachCon">
+                <view class="img">
+                    <image src="https://images.liquorbox.cn/pingqiu/jiaolian.jpg" mode=""/>
+                </view>
+                <view class="coachText">
+                    <view class="coachName">瓜迪奥拉</view>
+                    <view class="coachTxt">主教练</view>
+                </view>
+            </view>
+        </view>
+        <view class="teamlist">
+            <block wx:for="{{teamlist}}">
+                <view class="teamlistItem">
+                    <view class="teamlistI_title">
+                        <text>{{item.title}}</text>
+                        <text>位置</text>
+                        <text>身价</text>
+                    </view>
+                    <view class="teamlistI_con">
+                        <block wx:for="{{item.content}}">
+                            <navigator url="/pages/playerShow/playerShow">
+                                <view class="item">
+                                    <view class="teamlistI_c_item">
+                                        <image src="{{item.img}}" mode=""/>
+                                        <view class="info">
+                                            <text>{{item.name}}</text>
+                                            <text>{{item.info}}</text>
+                                        </view>
+                                    </view>
+                                    <view class="teamlistI_c_item">
+                                        <view class="info">
+                                            <text>{{item.loca}}</text>
+                                            <text>{{item.locaText}}</text>
+                                        </view>
+                                    </view>
+                                    <view class="teamlistI_c_item">
+                                        <view class="info">
+                                            <text>{{item.price}}元</text>
+                                        </view>
+                                    </view>
+                                </view>
+                            </navigator>
+                        </block>
+                    </view>
+                </view>
+            </block>
+        </view>
 
 
 
+    </t-tab-panel>
+    <t-tab-panel label="交易" value="3">
+        <view class="deal">
+        <view class="courseItem">
+            <view class="date">2023年</view>
+            <view class="dealItem">
+                <view class="d_flex">
+                    <text>6-2 16:00</text>
+                </view>
+                <view class="d_flex">
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <view class="h3">曼城</view>
+                </view>
+                <view class="d_flex">
+                    <t-tag class="margin-16" variant="light" theme="success">转入</t-tag>
+                </view>
+                <view class="d_flex">
+                    <text>￥3,200</text>
+                </view>
+            </view>
+        </view>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </view>
+    </t-tab-panel>
+    <t-tab-panel label="财务" value="4">
+        <view class="finance">
+            <view class="financeTitle">
+                <text>时间</text>
+                <text>金额</text>
+                <text>余额</text>
+                <text>详情</text>
+            </view>
+            <view class="financeContent">
+                <view class="financeC_item">
+                    <text>2023-05-25 10:01</text>
+                </view>
+                <view class="financeC_item">
+                    <text>-866元</text>
+                </view>
+                <view class="financeC_item">
+                    <text>-866元</text>
+                </view>
+                <view class="financeC_item">
+                    <text>参赛费:100元</text>
+                    <text>总身价:3830元 </text>
+                </view>
+            </view>
+        </view>
+    </t-tab-panel>
+</t-tabs>

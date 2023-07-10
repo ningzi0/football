@@ -1,0 +1,58 @@
+/* pages/trade/trade.wxss */
+
+.priceNumber{
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 20rpx;
+  margin-bottom: 15rpx;
+  display: flex;
+  align-items: center;
+}
+.priceNumber .text{
+  flex: 2;
+  font-size: 28rpx;
+}
+
+.priceNumber .t-stepper{
+  margin-right: 10rpx;
+}
+.playerTitleInfo{
+  min-width: 32%;
+}
+.playerlevel {
+  min-width: 33%;
+  color: #2e46a7;
+  text-align: center;
+}
+.playerlevel .text{
+  margin: 5rpx 0;
+}
+
+.titleText{
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+.titleText text{
+  padding: 0 0 25rpx;
+  box-sizing: border-box;
+  color: #999;
+}
+.titleText text:nth-child(1){
+  width: 100rpx;
+  text-align: center;
+}
+.titleText text:nth-child(2){
+  width: 39%;
+}
+.titleText text:nth-child(3){
+  width: 23%;
+  text-align: center;
+}
+.titleText text:nth-child(4){
+  text-align: center;
+  width: 30%;
+}
+.playerPic {
+  width: 100rpx;
+  height: 100rpx;
+}

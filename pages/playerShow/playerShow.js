@@ -5,6 +5,17 @@ Page({
      * 页面的初始数据
      */
     data: {
+      confirmBtn: { content: '确定', variant: 'base' },
+     
+
+
+      style: 'border: 1rpx solid rgba(220,220,220,1);border-radius: 12rpx;',
+      cur: {},
+    position: [
+      { value: 'center', },
+    ],
+
+
         stateInfoList: [{
           stateInfoItem: [{title: '进攻意识',number: '94',color: '#90dc00'},{title: '射门', number: '92',color: '#90dc00' }]
         },
@@ -36,34 +47,35 @@ Page({
           stateInfoItem: [{ title: '跳跃',number: '80',color: '#e49e02'},{title: '体力',number: '90',color: '#90dc00'}]
         }
     ],
-    playInfoLitem:[{
-        title:'数据版本',
-        content:'2021_23cn',
+    
     },
-    {
-        title:'卡牌类型',
-        content:'基础球员',
+
+    showDialog(e) {
+      const { key } = e.currentTarget.dataset;
+      this.setData({ [key]: true, dialogKey: key });
     },
-    {
-        title:'姓名',
-        content:'哈兰德',
+
+    closeDialog() {
+      const { dialogKey } = this.data;
+      this.setData({ [dialogKey]: false });
     },
-    {
-        title:'英文',
-        content:'Erling Haaland',
+
+    handlePopup(e) {
+      const { item } = e.currentTarget.dataset;
+
+      this.setData(
+        {
+          cur: item,
+        },
+        () => {
+          this.setData({ visible: true });
+        },
+      );
     },
-    {
-        title:'位置',
-        content:'前锋',
-    },
-    {
-        title:'比赛风格',
-        content:'偷猎者',
-    },
-    {
-        title:'基本资料',
-        content:'23岁 / 194cm / 88kg',
-    },]
+    onVisibleChange(e) {
+      this.setData({
+        visible: e.detail.visible,
+      });
     },
 
     /**

@@ -17,7 +17,11 @@
         "pages/honor/honor",
         "pages/my_competition/my_competition",
         "pages/complaint/complaint",
-        "pages/myInfo/myInfo"
+        "pages/myInfo/myInfo",
+        "pages/login/login",
+        "pages/trade/trade",
+        "pages/other/other",
+        "pages/collect/collect"
     ],
     "window": {
         "backgroundTextStyle": "dark",
@@ -71,12 +75,18 @@
         "t-date-time-picker": "tdesign-miniprogram/date-time-picker/date-time-picker",
         "t-radio-group": "tdesign-miniprogram/radio-group/radio-group",
         "t-radio": "tdesign-miniprogram/radio/radio",
-        "t-textarea": "tdesign-miniprogram/textarea/textarea"
+        "t-textarea": "tdesign-miniprogram/textarea/textarea",
+        "t-dialog": "tdesign-miniprogram/dialog/dialog",
+        "t-empty": "tdesign-miniprogram/empty/empty"
     },
     "tabBar": {
         "list": [
             {
                 "pagePath": "pages/index/index",
+                "text": ""
+            },
+            {
+                "pagePath": "pages/other/other",
                 "text": ""
             },
             {

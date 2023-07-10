@@ -1,0 +1,42 @@
+/* pages/login/login.wxss */
+.logo{
+  width: 170rpx;
+  font-size: 46rpx;
+  font-weight: bold;
+  background-color: #2e46a7;
+  color: #fff;
+  text-align: center;
+  padding: 20rpx;
+  border-radius: 25rpx;
+  margin: 150rpx auto;
+  box-sizing: border-box;
+  
+}
+
+
+.button-example {
+  margin: 0 32rpx;
+}
+.button-example .t-button{
+  margin: 20rpx 0;
+  font-weight: 500;
+}
+
+.checked{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content:center;
+  margin-top: 100rpx;
+}
+.t-checkbox--block{
+  padding: 0 !important;
+  background: none !important;
+}
+.checked .text{
+  font-size: 28rpx;
+}
+.checked .text navigator{
+  display: inline-block;
+  color: #2e46a7;
+}

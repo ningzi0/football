@@ -125,6 +125,34 @@
                     "query": "",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "登录",
+                    "pathName": "pages/login/login",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "球员交易",
+                    "pathName": "pages/trade/trade",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "其他球队",
+                    "pathName": "pages/other/other",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "我的收藏",
+                    "pathName": "pages/collect/collect",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }

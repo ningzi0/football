@@ -55,6 +55,20 @@
   }
 
 
+  .time{
+    background-color: #fff;
+    margin: 0 34rpx;
+    border-radius: 15rpx;
+  }
+  .time text{
+      font-size: 28rpx;
+      display: block;
+      margin: 10rpx;
+  }
+  .time .t-count-down{
+    padding: 30rpx;
+  }
+
 
 
 
