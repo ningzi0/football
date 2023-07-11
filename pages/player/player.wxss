@@ -65,7 +65,7 @@
 }
 .popRight{
     background: #eff0f2;
-    height: 100vh;
+    height: 90vh;
     width: 73%;
     overflow-y: scroll;
     position: relative;
@@ -104,9 +104,12 @@
     right: 0%;
     margin: 0 20rpx;
     z-index: 20000;
+    top: auto;
+    width: 69%;
 }
 .popRight .btn button{
     flex: 1;
+    margin: 0 0 0 10rpx;
 }
 
 .block2 {
@@ -127,6 +130,11 @@
   }
   
 
+  .t-tag--light.t-tag--primary{
+      margin: 10rpx 10rpx 10rpx 0 !important;
+  }
+
+
 
 
 
@@ -140,4 +148,25 @@
 .btn button{
     margin: 10rpx 0;
     display: block;
+}
+/* .t-popup {
+    width: 100% !important;
+} */
+
+
+.close-btn{
+    top: 0 !important;
+    bottom: auto;
+    right: 0;
+    left: auto;
+    color: #333 !important;
+}
+
+
+
+.t-slider__range-extreme--min{
+    margin-left: 0 !important;
+}
+.t-slider__range-extreme--max{
+    margin-right: 0 !important;
 }

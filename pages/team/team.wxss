@@ -236,3 +236,13 @@ page{
 
 
 
+.teamTitle{
+    display: flex;
+}
+.teamTitle text{
+    flex: 1;
+    text-align: center;
+    padding: 20rpx 0;
+    background-color: #f3f4f8;
+    margin: 20rpx 0 0;
+}

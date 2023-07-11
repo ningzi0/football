@@ -3,6 +3,8 @@ Component({
         styleIsolation: 'apply-shared',
       },
     data: {
+      scoreCard:['主场','客场'],
+      value1: 0,
       style: 'border: 2rpx solid rgba(220,220,220,1);border-radius: 12rpx;padding:15rpx',
         pop:[{
           img:'https://images.liquorbox.cn/pingqiu/mc.png',
@@ -61,6 +63,11 @@ Component({
         end: '2030-09-09 12:12:12',
     },
     methods: {
+      onChange1(e) {
+        this.setData({ value1: e.detail.value });
+      },
+
+
         onChange(e) {
             this.setData({ value: e.detail.value });
           },

@@ -1,56 +1,6 @@
+<button 
+bindlongpress="handleLongPress" >
+点击/长按</button> 
 
-
-
-<t-button theme="primary" size="small" bindtap='jump'>确定</t-button>
-
-<view class="playerWrap">
-    <view class="playerContainer">
-        <block wx:for="{{playerList}}">
-            <t-checkbox-group bind:change="handleGroupChange" data-player="{{item.playerid}}" style="{{!showCheckBox?'display:none':'display:block'}}" options="{{options}}" />
-            <view class="playerContainerItem">
-                <navigator url="/pages/playerShow/playerShow">
-                    <t-badge count="{{item.have}}" offset="{{ [0, 2] }}"></t-badge>
-                    <view class="playerItem">
-                        <view class="playerPic">
-                            <image src="{{item.imgSrc}}" mode="aspectFill" />
-                        </view>
-                        <view class="playerTitleInfo">
-                            <view class="playerName">
-                                <text>{{item.nameCn}}</text>
-                                <text>{{item.nameEn}}</text>
-                            </view>
-                            <view class="PersonalInfo">{{item.PersonalInfo}}</view>
-                            <view class="price">身价:{{item.price}}元</view>
-                        </view>
-                        <view class="playerInfo">
-                            <text>{{item.playerCity}}</text>
-                            <text>{{item.playerNum}}</text>
-                            <text>{{item.playerLoca}}</text>
-                        </view>
-                        <view class="playerlevel {{item.colorLetter}}"> {{item.playerLetter}} </view>
-                        <view class="playerImg">
-                            <image src="{{item.playerIcon}}" mode="" />
-                        </view>
-                    </view>
-                </navigator>
-            </view>
-        </block>
-    </view>
-</view>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<view class="close" hidden="{{hidden}}">关闭</view>
+<!-- button 可以换成view-->

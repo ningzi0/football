@@ -153,6 +153,20 @@
                     "query": "",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "红包分组",
+                    "pathName": "pages/hb_grouping/hb_grouping",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "对比",
+                    "pathName": "pages/contrast/contrast",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }

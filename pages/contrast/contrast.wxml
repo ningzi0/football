@@ -1,0 +1,78 @@
+<view class="contrast">
+  <t-sticky>
+    <view class="top">
+        <view class="t_item">
+            <text>球员</text>
+        </view>
+        <view class="t_item">
+            <view class="img">
+                <image src="https://images.liquorbox.cn/pingqiu/haaland.png" mode=""/>
+            </view>
+            <text>哈兰德</text>
+        </view>
+        <view class="t_item">
+            <view class="img">
+                <image src="https://images.liquorbox.cn/pingqiu/haaland.png" mode=""/>
+            </view>
+            <text>哈兰德</text>
+        </view>
+        <view class="t_item">
+            <view class="img">
+                <image src="https://images.liquorbox.cn/pingqiu/haaland.png" mode=""/>
+            </view>
+            <text>哈兰德</text>
+        </view>
+    </view>
+  </t-sticky>
+
+    <view class="content">
+      <block wx:for="{{c_item}}">
+          <view class="c_item">
+            <text>{{item.tit}}</text>
+            <text>{{item.one}}</text>
+            <text>{{item.two}}</text>
+            <text>{{item.three}}</text>
+          </view>
+      </block>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

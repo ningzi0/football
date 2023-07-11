@@ -63,6 +63,10 @@
           <view class="playerWrap">
             <view class="playerContainer">
               <block wx:for="{{playerList2}}">
+              <view class="itemCard {{item.active}}">
+                <view class="demo-count-down-content">
+                  <t-count-down size="small" format="HH:mm:ss" time="{{ time }}" theme="square" />
+                </view>
                 <view class="playerContainerItem">
                   <t-checkbox-group bind:change="handleGroupChange" data-player="{{item.playerid}}" style="{{!showCheckBox?'display:none':'display:block'}}" options="{{options}}" />
                   <navigator url="/pages/playerShow/playerShow">
@@ -96,6 +100,7 @@
                   <t-stepper value="{{value}}" size="medium" max='99999' step='50' theme="filled" bind:change="handleChange" />
                   <t-button theme="light" size="small">确认</t-button>
                 </view>
+              </view>
               </block>
             </view>
           </view>

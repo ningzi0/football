@@ -1,0 +1,132 @@
+.hb_grouping{
+  padding: 0 20rpx;
+}
+.title{
+  display: flex;
+  align-items: center;
+}
+.title .border{
+  width: 20rpx;
+  height: 20rpx;
+  border :8rpx solid #27329d;
+  border-radius: 50%;
+}
+.title text{
+  color: #27329d;
+  font-size: 30rpx;
+  padding: 0 20rpx;
+}
+.operate{
+  background-color: #fff;
+  border-radius: 15rpx;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.input{
+  display: flex;
+  margin: 50rpx 0;
+  align-items: center;
+}
+.input .t-input{
+  background-color: #e8f2fb !important;
+  border-radius: 150rpx;
+  padding: 18rpx 34rpx !important;
+  margin-right: 10rpx;
+}
+.input .t-input .t-input__icon--prefix{
+  color: #27329d !important;
+}
+.operateBtn{
+  display: flex;
+  align-items: center;
+}
+.operateBtn button{
+  flex: 1;
+}
+.operateBtn button:first-child{
+  margin-right: 30rpx;
+}
+
+.t-checkbox__border{
+  display: none;
+}
+
+.name{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20rpx 0;
+}
+.nameText .t-checkbox--block{
+  padding: 10rpx 15rpx 10rpx 10rpx !important;
+  border: 1px solid #eee;
+  border-radius: 10rpx;
+  margin: 15rpx 10rpx 0 0;
+}
+.nameText{
+  position: relative;
+}
+.close{
+  position: absolute;
+  top: -6rpx;
+  right: 4rpx;
+  background-color: #d54941;
+  border-radius: 50%;
+  z-index: 55;
+}
+
+
+.block {
+  position: relative;
+  min-width: 500rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 50rpx 30rpx;
+}
+.block .title{
+  font-size: 34rpx;
+  color: #27329d;
+  font-weight: bold;
+  text-align: center;
+  display:block;
+  border-bottom: 1px solid #eee;
+  padding: 0 0 30rpx;
+}
+
+
+
+.close-btn {
+  position: absolute;
+  left: 50%;
+  margin-left: -32rpx;
+  bottom: calc(-1 * (48rpx + 64rpx));
+}
+
+.wrapper {
+  margin: 32rpx;
+  display: block;
+}
+
+.b_content .item_title,.b_item{
+  display: flex;
+  align-items: center;
+}
+.b_item:nth-child(even){
+  background-color: #e8e8e8;
+}
+.b_item:last-child{
+  color: #d54941;
+}
+.b_content .item_title text,.b_item text{
+  flex: 1;
+  text-align: center;
+  padding: 25rpx 0;
+  font-size: 30rpx;
+}
+.b_content .item_title{
+  font-weight: bold;
+}
+
+
+
+

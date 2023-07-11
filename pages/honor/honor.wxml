@@ -5,27 +5,167 @@
 
 <view class="rankContainer">
   <view class="rankingContainer">
+    <t-tabs
+  defaultValue="{{0}}"
+  bind:change="onTabsChange"
+  bind:click="onTabsClick"
+  t-class="custom-tabs"
+  t-class-content="custom-panel" theme="tag"
+>
+<t-cell
+  title="选择日期"
+  hover
+  note="{{dateText || ''}}"
+  arrow
+  data-mode="date"
+  bindtap="showPicker"
+  class="test"
+  t-class="pannel-item"
+/>
+<!-- 年月日 -->
+<t-date-time-picker
+  title="选择日期"
+  visible="{{dateVisible}}"
+  mode="date"
+  defaultValue="{{date}}"
+  format="YYYY-MM-DD"
+  bindchange="onConfirm"
+  bindpick="onColumnChange"
+  bindcancel="hidePicker"
+  start="{{start}}"
+  end="{{end}}"
+/>
+  <t-tab-panel label="全部" value="0" style="{{tabPanelstyle}}">
+    <view class="honorCon">
+      <view class="rankingContainer">
         <view class="rankingCtitle">
-            <text>界数</text>
-            <text>级别</text>
-            <text>教练</text>
+            <text>排名</text>
             <text>球队</text>
-            <text>名次</text>
+            <text>场次</text>
+            <text>胜/平/负</text>
+            <text>进/失球</text>
+            <text>积分</text>
         </view>
         <view class="rankingContent">
-          <block wx:for="{{rank}}">
-              <view class="item">
-                  <view class="text">{{item.jie}}</view>
-                  <view class="text">{{item.level}}</view>
-                  <view class="text">{{item.coach}}</view>
-                  <view class="text">
-                    <image src="{{item.teamImg}}" mode=""/>
-                    <text>{{item.teamName}}</text>
-                  </view>
-                  <view class="text">{{item.ranking}}</view>
-              </view>
-          </block>
+            <view class="item no1">
+                <view class="num unify">
+                  <text>1</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/hj.png" mode=""/>
+                    <text>皇家马德里</text>
+                </view>
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+            <view class="item no2">
+                <view class="num unify">
+                  <text>2</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <text>曼城</text>
+                </view>
+                
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+            
+            <view class="item no3">
+                <view class="num unify">
+                  <text>3</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <text>曼城</text>
+                </view>
+                
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+            <view class="item">
+                <view class="num unify">
+                  <text>4</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <text>曼城</text>
+                </view>
+                
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
+            <view class="item">
+                <view class="num unify">
+                  <text>5</text>
+                </view>
+                <view class="img-name unify">
+                    <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>
+                    <text>曼城</text>
+                </view>
+                
+                <view class="number unify">
+                  <text>10</text>
+                </view>
+                <view class="number unify">
+                  <text>8/2/0</text>
+                </view>
+                <view class="number unify">
+                  <text>19/7</text>
+                </view>
+                <view class="jifen unify">99</view>
+            </view>
         </view>
+    </view>
+    </view>
+  </t-tab-panel>
+  <t-tab-panel label="杯赛" value="1" style="{{tabPanelstyle}}">选项二内容</t-tab-panel>
+  <t-tab-panel label="联赛" value="2" style="{{tabPanelstyle}}">选项三内容</t-tab-panel>
+  <t-tab-panel label="争霸赛" value="3" style="{{tabPanelstyle}}">选项四内容</t-tab-panel>
+</t-tabs>
+
+
+
+
+
+
+
+
+
+
+
     </view>
   
  

@@ -194,6 +194,24 @@
 
 
 
+/* 横向布局 */
+.scoreCard .t-radio-group{
+  display: flex;
+}
+.scoreCard .card{
+  flex: 1;
+  margin: 20rpx !important;
+}
+.scoreCard .card--active .t-icon{
+  position: absolute;
+  left: 0;
+  color: #fff;
+  z-index: 666;
+}
+.scoreCard .t-radio--block{
+  padding: 20rpx 30rpx;
+}
+
 
 
 

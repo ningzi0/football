@@ -1,0 +1,57 @@
+/* pages/contrast/contrast.wxss */
+.contrast{
+  font-size: 26rpx;
+}
+.contrast .top{
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0;
+  background: #fff;
+}
+.contrast .top .t_item{
+  flex: 1;
+  text-align: center;
+}
+.contrast .top .t_item:first-child{
+  text-align: left;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.t_item .img{
+  width: 100rpx;
+  height: 100rpx;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+}
+.t_item .img image{
+  width: 100%;
+  height: 100%;
+}
+.contrast{
+  background-color: #fff;
+}
+.content{
+  border-top: 1px solid #dadada;
+}
+.c_item{
+  display: flex;
+}
+.c_item:nth-child(odd){
+  background-color: #e8e8e8;
+}
+.c_item text{
+  flex: 1;
+  padding: 20rpx 0;
+  text-align: center;
+  border-right: 1px dashed #dadada;
+  border-bottom: 1px solid #dadada;
+}
+.c_item text:first-child{
+  text-align: left;
+  padding: 20rpx;
+  box-sizing: border-box;
+  color: #27329d;
+}
+.color{
+  color: red;
+}

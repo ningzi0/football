@@ -1,7 +1,9 @@
 Component({
     data: {
         time: 3000 * 60 * 1000,
-
+        border: {
+            color: '#eee',
+          },
         img1: 'https://images.liquorbox.cn/pingqiu/zuqiu.png',
         img2: 'https://images.liquorbox.cn/pingqiu/qiuyi.png',
         img3: 'https://images.liquorbox.cn/pingqiu/qiuxie.png',

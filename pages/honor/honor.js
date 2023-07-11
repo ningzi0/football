@@ -1,108 +1,42 @@
-// pages/honor/honor.js
 Page({
-
-    /**
-     * 页面的初始数据
-     */
     data: {
-        rank:[{
-            jie:'PES2020第一届争霸之旅',
-            level:'超级联赛',
-            coach:'袁昕',
-            teamImg:'https://images.liquorbox.cn/pingqiu/mc.png',
-            teamName:'巴吞联',
-            ranking:'冠军'
-        },{
-            jie:'PES2020第一届争霸之旅',
-            level:'超级联赛',
-            coach:'蜗牛',
-            teamImg:'https://images.liquorbox.cn/pingqiu/mc.png',
-            teamName:'巴FC',
-            ranking:'亚军'
-        },{
-            jie:'PES2020第一届争霸之旅',
-            level:'超级联赛',
-            coach:'袁昕',
-            teamImg:'https://images.liquorbox.cn/pingqiu/mc.png',
-            teamName:'巴吞联',
-            ranking:'冠军'
-        },{
-            jie:'PES2020第一届争霸之旅',
-            level:'超级联赛',
-            coach:'袁昕',
-            teamImg:'https://images.liquorbox.cn/pingqiu/mc.png',
-            teamName:'巴吞联',
-            ranking:'冠军'
-        },{
-            jie:'PES2020第一届争霸之旅',
-            level:'超级联赛',
-            coach:'袁昕',
-            teamImg:'https://images.liquorbox.cn/pingqiu/mc.png',
-            teamName:'巴吞联',
-            ranking:'冠军'
-        },{
-            jie:'PES2020第一届争霸之旅',
-            level:'超级联赛',
-            coach:'袁昕',
-            teamImg:'https://images.liquorbox.cn/pingqiu/mc.png',
-            teamName:'巴吞联',
-            ranking:'冠军'
-        }]
+      mode: '',
+      dateVisible: false,
+      date: new Date('2023-06-07').getTime(), // 支持时间戳传入
+      dateText: '2023-06-07',
+  
+      // 指定选择区间起始值
+      start: '2000-01-01 00:00:00',
+      end: '2030-09-09 12:12:12',
     },
-
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad(options) {
-
+    showPicker(e) {
+      const { mode } = e.currentTarget.dataset;
+      this.setData({
+        mode,
+        [`${mode}Visible`]: true,
+      });
     },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady() {
-
+    hidePicker() {
+      const { mode } = this.data;
+      this.setData({
+        [`${mode}Visible`]: false,
+      });
     },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow() {
-
+    onConfirm(e) {
+      const { value } = e.detail;
+      const { mode } = this.data;
+  
+      console.log('confim', value);
+  
+      this.setData({
+        [mode]: value,
+        [`${mode}Text`]: value,
+      });
+  
+      this.hidePicker();
     },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide() {
-
+  
+    onColumnChange(e) {
+      console.log('pick', e.detail.value);
     },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload() {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh() {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom() {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage() {
-
-    }
-})
+  });

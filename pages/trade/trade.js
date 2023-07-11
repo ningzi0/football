@@ -5,6 +5,7 @@ Page({
      * 页面的初始数据
      */
     data: {
+        time: 96 * 60 * 1000,
         playerList: [{
             state: '未通过',
             nameCn: '哈兰德',
@@ -54,6 +55,7 @@ Page({
         
     ],
     playerList2: [{
+        active:'active',
         state: '未通过',
         nameCn: '哈兰德',
         nameEn: 'Erling Haaland',

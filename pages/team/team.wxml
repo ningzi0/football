@@ -122,9 +122,20 @@
         <view class="deal">
         <view class="courseItem">
             <view class="date">2023年</view>
+            <view class="teamTitle">
+                <text>时间</text>
+                <text>球员</text>
+                <text>球队</text>
+                <text>状态</text>
+                <text>金额</text>
+            </view>
             <view class="dealItem">
                 <view class="d_flex">
                     <text>6-2 16:00</text>
+                </view>
+                <view class="d_flex">
+                    <image src="https://images.liquorbox.cn/pingqiu/haaland.png" mode=""/>
+                    <view class="h3">哈兰德</view>
                 </view>
                 <view class="d_flex">
                     <image src="https://images.liquorbox.cn/pingqiu/mc.png" mode=""/>

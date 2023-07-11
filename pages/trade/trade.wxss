@@ -2,7 +2,6 @@
 
 .priceNumber{
   background: #fff;
-  border-bottom: 1px solid #eee;
   padding: 20rpx;
   margin-bottom: 15rpx;
   display: flex;
@@ -56,3 +55,24 @@
   width: 100rpx;
   height: 100rpx;
 }
+
+
+
+.playerContainer{
+  background-color: #f9f9f9;
+}
+.itemCard{
+  margin: 20rpx 0;
+  background-color: #fff;
+}
+.demo-count-down-content{
+  text-align: right;
+    padding: 20rpx;
+    border-bottom: 1px solid #EEF;
+}
+
+
+.itemCard.active{
+  border-left: 10rpx solid rgb(32, 122, 88);
+}
+

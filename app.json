@@ -21,7 +21,9 @@
         "pages/login/login",
         "pages/trade/trade",
         "pages/other/other",
-        "pages/collect/collect"
+        "pages/collect/collect",
+        "pages/hb_grouping/hb_grouping",
+        "pages/contrast/contrast"
     ],
     "window": {
         "backgroundTextStyle": "dark",

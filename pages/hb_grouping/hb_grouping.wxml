@@ -1,0 +1,142 @@
+<view class="hb_grouping">
+  <view class="operate">
+      <view class="title">
+          <view class="border"></view>
+          <text>分组操作</text>
+      </view>
+      <view class="input">
+        <t-input prefixIcon="user" placeholder="请输入分组名单" clearable  borderless="true" />
+        <t-button theme="primary" icon="add-circle" size="medium"  shape="round">添加</t-button>
+      </view>
+      <view class="operateBtn">
+        <t-button theme="primary" size="medium"  bind:tap="handlePopup">开始分组</t-button>
+        <t-button theme="danger" size="medium">保存设置</t-button>
+      </view>
+
+  </view>
+  
+  <view class="operate">
+      <view class="title">
+          <view class="border"></view>
+          <text>分组名单(长按删除)</text>
+      </view>
+      <view class="name">
+          <view class="nameText" bindlongpress="handleLongPress">
+            <t-checkbox label="何浩" icon="rectangle" default-checked />
+            <view class="close" hidden="{{hidden}}">
+              <t-icon name="close" color="#fff" size="42rpx"/>
+            </view>
+          </view>
+          <view class="nameText" bindlongpress="handleLongPress">
+            <t-checkbox label="张平" icon="rectangle" default-checked />
+            <view class="close" hidden="{{hidden}}">
+              <t-icon name="close" color="#fff" size="42rpx"/>
+            </view>
+          </view>
+          <view class="nameText" bindlongpress="handleLongPress">
+            <t-checkbox label="阳光" icon="rectangle" default-checked />
+            <view class="close" hidden="{{hidden}}">
+              <t-icon name="close" color="#fff" size="42rpx"/>
+            </view>
+          </view>
+          <view class="nameText" bindlongpress="handleLongPress">
+            <t-checkbox label="彭康" icon="rectangle" default-checked />
+            <view class="close" hidden="{{hidden}}">
+              <t-icon name="close" color="#fff" size="42rpx"/>
+            </view>
+          </view>
+          <view class="nameText" bindlongpress="handleLongPress">
+            <t-checkbox label="朱刚" icon="rectangle" default-checked />
+            <view class="close" hidden="{{hidden}}">
+              <t-icon name="close" color="#fff" size="42rpx"/>
+            </view>
+          </view>
+      </view>
+      
+  </view>
+
+
+  <view class="block">
+    <view class="title">分组结果</view>
+    <view class="b_content">
+        <view class="item_title">
+            <text>A组</text>
+            <text>B组</text>
+        </view>
+        <view class="b_item">
+            <text>朱刚</text>
+            <text>VS</text>
+            <text>张平</text>
+        </view>
+        <view class="b_item">
+            <text>阳光</text>
+            <text>VS</text>
+            <text>何浩</text>
+        </view>
+        <view class="b_item">
+          <text>轮空：彭康</text>
+        </view>
+    </view>
+
+  </view>
+
+
+
+</view>
+
+
+
+<t-popup visible="{{visible}}" bind:visible-change="onVisibleChange" placement="center">
+  <view class="block">
+    <view class="title">分组结果</view>
+    <view class="b_content">
+        <view class="item_title">
+            <text>A组</text>
+            <text>B组</text>
+        </view>
+        <view class="b_item">
+            <text>朱刚</text>
+            <text>VS</text>
+            <text>张平</text>
+        </view>
+        <view class="b_item">
+            <text>阳光</text>
+            <text>VS</text>
+            <text>何浩</text>
+        </view>
+        <view class="b_item">
+          <text>轮空：彭康</text>
+        </view>
+    </view>
+
+    <t-icon t-class="close-btn" name="close-circle" size="32" color="#fff" bind:tap="onClose" />
+  </view>
+</t-popup>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

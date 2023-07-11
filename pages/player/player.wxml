@@ -82,6 +82,7 @@
 
             <view class="btn">
                 <t-button theme="primary" size="small" bind:tap="onClose">确定</t-button>
+                <t-button theme="danger" size="small" bind:tap="onClose">取消</t-button>
             </view>
         </view>
     </view>

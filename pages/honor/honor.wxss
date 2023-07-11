@@ -21,61 +21,75 @@
   overflow: hidden;
   min-height: 300rpx;
 }
-.achievement{
+
+
+
+.t-cell__title-text,.t-cell__note{
+  font-size: 28rpx !important;
+}
+.honorTitle{
+  display: flex;
+  color: #505b73;
+  background-color: #f3f4f8;
+}
+.honorTitle .text{
+  flex: 1;
+  padding: 32rpx;
+}
+.center{
+  text-align: center;
+}
+.right{
+  text-align: right;
+}
+.honorC_item{
   display: flex;
   align-items: center;
-  padding: 25rpx;
-  box-shadow: 0 10rpx 20rpx rgba(0,0,0,0.05);
-  margin: 55rpx 40rpx;
-  border-radius: 15rpx;
+  border-bottom: 1px solid #eee;
 }
-.achievement .title{
-  font-size: 35rpx;
-  font-weight: bold;
-  color: #2f69c9;
-  width: 15%;
+.honorC_item .text{
+  flex: 1;
+  padding: 32rpx;
 }
-.achievement .img{
-  width: 80rpx;
-  height: 80rpx;
+.honorC_item .text image{
+  width: 70rpx;
+  height: 70rpx;
+  display: block;
 }
-.achievement .img image{
-  width: 100%;
-  height: 100%;
-}
-.achievement .name{
-  font-size: 36rpx;
-  font-weight: bold;
-  padding: 0 20rpx;
-  width: 18%;
-}
-
-.myrank{
+.honorC_item .text text{
   font-size: 34rpx;
   font-weight: bold;
-  color: #2f69c9;
-  padding: 0 20rpx;
-}
-.myfraction{
-  font-size: 34rpx;
-  font-weight: bold;
-  color: #2f69c9;
-  padding: 0 20rpx;
 }
 
+
+
+
+
+
+
+
+
+
+.honorCon{
+  padding: 30rpx;
+}
+/**/
 .rankingContainer{
-  padding: 0 30rpx;
+  padding: 0 0 20rpx;
 }
 .rankingCtitle{
   display: flex;
   align-items: center;
-  margin-top: 30rpx;
+  padding: 0 0 20rpx;
 }
 .rankingCtitle text{
-  flex: 2;
+  flex: 1;
   color: #afb3b6;
-  font-size: 30rpx;
+  font-size: 24rpx;
 
+}
+.rankingCtitle text:nth-child(2){
+  flex: 2;
 }
 
 .rankingCtitle text:last-child{
@@ -83,31 +97,61 @@
 }
 .rankingContent .item{
   display: flex;
-  padding: 30rpx 0;
-  border-bottom: 1px solid #eee;
+  align-items: center;
+  padding: 0 15rpx;
 }
-.rankingContent{
-  font-size: 28rpx;
+.rankingContent .item:nth-child(odd){
+  background: #f3f4f8;
 }
-.rankingContent .item{
+.rankingContent .img-name{
   display: flex;
+  align-items: center;
+  padding-left: 0;
 }
-.rankingContent .item .text{
-  flex: 2;
-}
-.rankingCtitle text:nth-child(4),.rankingContent .item .text:nth-child(4){
-  text-align: center;
-}
-.rankingContent .item .text:nth-child(3),.rankingCtitle text:nth-child(3){
-  flex: 1;
-}
-.rankingContent .item .text:last-child,.rankingCtitle text:last-child{
-  text-align: right;
-  flex: 1;
-}
-.rankingContent image{
+.rankingContent .img-name image{
   width: 50rpx;
   height: 50rpx;
+}
+.rankingContent .img-name text{
+  font-size: 24rpx;
+  padding: 0 0;
+}
+.unify {
+  flex: 1;
+  padding: 15rpx 0rpx;
+}
+.img-name{
+  flex: 2;
+}
+.jifen{
+  text-align: right;
+}
+
+.item .num text{
   display: block;
-  margin: 0 auto;
+  width: 45rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  text-align: center;
+  border-radius: 50%;
+  color: #a4a8ab;
+}
+.no1 .num text{
+  background-color: #ffbe4b;
+  box-shadow: 0 5rpx 5rpx rgba(0,0,0,0.2);
+  color: #fff;
+}
+.no2 .num text{
+  background-color: #dbdee5;
+  box-shadow: 0 5rpx 5rpx rgba(0,0,0,0.2);
+  color: #fff;
+}
+.no3 .num text{
+  background-color: #ff9e70;
+  box-shadow: 0 5rpx 5rpx rgba(0,0,0,0.2);
+  color: #fff;
+}
+.jifen {
+  font-weight: bold;
+  font-size: 34rpx;
 }

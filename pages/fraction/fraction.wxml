@@ -6,6 +6,17 @@
 </view>
 
 <view class="Score_infor">
+<view class="scoreCard">
+ <t-radio-group  value="{{value1}}" bind:change="onChange1">
+  <view wx:for="{{scoreCard}}" wx:key="index" class="card {{value1 == index ? 'card--active' : ''}}">
+    <t-icon wx:if="{{value1 == index}}" name="check" t-class="card__icon" />
+    <t-radio value="{{index}}" label="{{item}}" icon="none" borderless />
+  </view>
+</t-radio-group>
+</view>
+
+
+
   <t-cell title="选择赛事日期" hover note="{{dateText || ''}}" data-mode="date" bindtap="showPicker" class="test" arrow t-class="pannel-item" />
   <!-- 年月日 -->
   <t-date-time-picker title="选择日期" visible="{{dateVisible}}" mode="date" defaultValue="{{date}}" format="YYYY-MM-DD" bindchange="onConfirm" bindpick="onColumnChange" bindcancel="hidePicker" start="{{start}}" end="{{end}}" />
