@@ -214,4 +214,31 @@
 
 
 
+.Example{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.Example image{
+  width: 100%;
+}
 
+
+.uploadimg .t-button--block{
+  width: auto;
+  padding: 0 10rpx;
+  background-color: #0052d9;
+  color: #fff !important;
+}
+
+.block--center {
+  width: 600rpx;
+}
+
+.Example text{
+  padding: 0 0 20rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border-radius: 50rpx;
+  display: block;
+}

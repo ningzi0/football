@@ -97,7 +97,7 @@
                   <view class="text">
                     请对球员进行出价
                   </view>
-                  <t-stepper value="{{value}}" size="medium" max='99999' step='50' theme="filled" bind:change="handleChange" />
+                  <t-stepper defaultValue="3" theme="filled" />
                   <t-button theme="light" size="small">确认</t-button>
                 </view>
               </view>

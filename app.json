@@ -79,7 +79,9 @@
         "t-radio": "tdesign-miniprogram/radio/radio",
         "t-textarea": "tdesign-miniprogram/textarea/textarea",
         "t-dialog": "tdesign-miniprogram/dialog/dialog",
-        "t-empty": "tdesign-miniprogram/empty/empty"
+        "t-empty": "tdesign-miniprogram/empty/empty",
+        "t-dropdown-menu": "tdesign-miniprogram/dropdown-menu/dropdown-menu",
+    "t-dropdown-item": "tdesign-miniprogram/dropdown-item/dropdown-item"
     },
     "tabBar": {
         "list": [

@@ -1,9 +1,40 @@
 <!--pages/fraction/fraction.wxml-->
 <view class="uploadimg">
   <text>上传比赛截图</text>
-  <t-upload mediaType="{{['video','image']}}" max="{{1}}" files="{{fileList}}" bind:add="handleAdd" bind:remove="handleRemove">
-  </t-upload>
+  <t-button
+  wx:for="{{position2}}"
+  wx:key="index"
+  block
+  size="small"
+  variant="outline"
+  theme="primary"
+  bind:tap="handlePopup2"
+  data-item="{{item}}"
+  t-class="wrapper"
+  >
+  <t-icon name="add" size="42rpx"  />
+  </t-button
+>
 </view>
+
+
+<t-popup visible="{{visible2}}" bind:visible-change="onVisibleChange" placement="{{cur.value || 'center'}}">
+  <view class="block block--{{cur.value}}">
+    <view class="Example">
+      <view class="pic">
+        <image src="https://images.liquorbox.cn/pingqiu/449b803a5f3c11a4269592ee42d28e1.jpg" mode=""/>
+      </view>
+      <text>请按照上传示例上传截图</text>
+      <t-upload mediaType="{{['video','image']}}" max="{{1}}" files="{{fileList}}" bind:add="handleAdd" bind:remove="handleRemove">
+</t-upload>
+    </view>
+  </view>
+</t-popup>
+
+
+
+<!-- <t-upload mediaType="{{['video','image']}}" max="{{1}}" files="{{fileList}}" bind:add="handleAdd" bind:remove="handleRemove">
+</t-upload> -->
 
 <view class="Score_infor">
 <view class="scoreCard">

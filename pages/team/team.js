@@ -1,5 +1,25 @@
 Component({
     data: {
+      product: {
+        value: 'all',
+        options: [
+          {
+            value: 'all',
+            label: '筛选',
+          },
+          {
+            value: 'one',
+            label: '测试一',
+          },
+          {
+            value: 'two',
+            label: '测试二',
+          },
+        ],
+      },
+
+
+
       teamlist:[{
         title:'前锋',
         content:[{
@@ -70,6 +90,10 @@ Component({
      * 组件的方法列表
      */
     methods: {
-
+      onChange(e) {
+        this.setData({
+          'product.value': e.detail.value,
+        });
+      },
     },
   });

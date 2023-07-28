@@ -52,6 +52,9 @@ Component({
         position: [
             { value: 'right'},
           ],
+          position2: [
+            { value: 'center'},
+          ],
         fileList: [],
         mode: '',
         dateVisible: false,
@@ -83,9 +86,22 @@ Component({
               },
             );
           },
+          handlePopup2(e) {
+            const { item } = e.currentTarget.dataset;
+      
+            this.setData(
+              {
+                cur: item,
+              },
+              () => {
+                this.setData({ visible2: true });
+              },
+            );
+          },
           onVisibleChange(e) {
             this.setData({
               visible: e.detail.visible,
+              visible2: e.detail.visible,
             });
           },
         showPicker(e) {
