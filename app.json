@@ -23,7 +23,9 @@
         "pages/other/other",
         "pages/collect/collect",
         "pages/hb_grouping/hb_grouping",
-        "pages/contrast/contrast"
+        "pages/contrast/contrast",
+        "pages/knockout/knockout",
+        "pages/clockIn/clockIn"
     ],
     "window": {
         "backgroundTextStyle": "dark",
@@ -81,7 +83,7 @@
         "t-dialog": "tdesign-miniprogram/dialog/dialog",
         "t-empty": "tdesign-miniprogram/empty/empty",
         "t-dropdown-menu": "tdesign-miniprogram/dropdown-menu/dropdown-menu",
-    "t-dropdown-item": "tdesign-miniprogram/dropdown-item/dropdown-item"
+        "t-dropdown-item": "tdesign-miniprogram/dropdown-item/dropdown-item"
     },
     "tabBar": {
         "list": [

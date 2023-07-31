@@ -1,0 +1,238 @@
+<!--pages/knockout/knockout.wxml-->
+<view class="app">
+    <view class="vct-duizhen">
+        <view class="dis_none dis_show">
+            <view class="have-data">
+                  <view class="duizhen-box" style='background-image: url("https://duihui.duoduocdn.com/bg_imgs/ouguan_duizhen_2022_1676497930.png");'>
+                      <!-- 上半场 -->
+                      <view class="top">
+                          <view class="level flex">
+                            <block wx:for="{{teamsBox}}">
+                                <view class="teams-box" style="width: 50%;">
+                                    <view class="vct-nba-teams v-n-t west">
+                                        <view class="teams flex">
+                                            <view class="team left-team">
+                                                <view class="logo-box">
+                                                    <image src="{{item.img1}}" class="img-logo" mode=""/>
+                                                </view>
+                                                <view class="name">{{item.name1}}</view>
+                                            </view>
+                                            <view class="team right-team">
+                                                <view class="logo-box">
+                                                    <image src="{{item.img2}}" class="img-logo" mode=""/>
+                                                </view>
+                                                <view class="name">{{item.name2}}</view>
+                                            </view>
+                                        </view>
+                                        <view class="down-area">
+                                            <view class="score">
+                                              <view class="flex">{{item.score1}}</view>
+                                              <view class="flex">{{item.score2}}</view>
+                                            </view>
+                                            <view class="line-up line-down {{item.border}}-win" style="opacity: 1;">
+                                                <view class="left-line">
+                                                    <view class="border-line"></view>
+                                                </view>
+                                                <view class="right-line">
+                                                    <view class="border-line"></view>
+                                                </view>
+                                                <view class="col-line"></view>
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                            </block>
+                          </view>
+
+                          <view class="level flex">
+                            <block wx:for="{{teamsBox2}}">
+                                <view class="teams-box" style="width: 100%;">
+                                    <view class="vct-nba-teams v-n-t west">
+                                        <view class="teams flex">
+                                            <view class="team left-team">
+                                                <view class="logo-box">
+                                                    <image src="{{item.img1}}" class="img-logo" mode=""/>
+                                                </view>
+                                                <view class="name">{{item.name1}}</view>
+                                            </view>
+                                            <view class="team right-team">
+                                                <view class="logo-box">
+                                                    <image src="{{item.img2}}" class="img-logo" mode=""/>
+                                                </view>
+                                                <view class="name">{{item.name2}}</view>
+                                            </view>
+                                        </view>
+                                        <view class="down-area">
+                                            <view class="score">
+                                              <view class="flex">{{item.score1}}</view>
+                                              <view class="flex">{{item.score2}}</view>
+                                            </view>
+                                            <view class="line-up line-down {{item.border}}-win" style="opacity: 1;">
+                                                <view class="left-line">
+                                                    <view class="border-line"></view>
+                                                </view>
+                                                <view class="right-line">
+                                                    <view class="border-line"></view>
+                                                </view>
+                                                <view class="col-line"></view>
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                            </block>
+                          </view>
+
+                          <view class="final flex flex-align-center flex-pack-center">
+                              <view class="team left-team">
+                                  <view class="name">曼城</view>
+                                  <view class="logo-box">
+                                      <image src="https://duihui.duoduocdn.com/zuqiu/zq_mancheng_206114.png" class="img-logo" mode=""/>
+                                  </view>
+                                  <image class="win-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAWCAYAAABpNXSSAAAFeklEQVRYR91Yf0jTWxT/bG5z7qc6nRlJhYSgFFlZofSLjBL6QVotUSgz7BcloRSGWVkghAXSD32VSGHkQrTSSGlBRUEmUlQGQVEIoU7nnG7Tbbo97t13933VrZ6P98fzff+695xzz7mf8+Oeswl64uK2eoKC/gAwCzPv6xGMjx8QdMfHd89QAD6X9xAQnpkXgIk3DghCmpEBUVQUk7bp9fCYTHQvUKshz8pivNEXLzDW2cn2sqwsCNVqunc7nbDfugXF4cOM72hrg6ujA6KEBEjXrKH0sZ8/Mfrw4RR/ynJzIQwOpnT+HfiCAUGoKyoQkprKZHsSEwGnk+5DMjOhLi5mPEtpKUb0eroXRkUh0mCAQCj0Gq6rg12vR2RjI5M3nzwJR3MzFMeOQXHgAKV7XC70bdwId28vkxNoNIh6+ZLxexcv9ps0fx9EQgJToHnwAOIFC/yCmAywT6eDKCYGYeXlTL4/MxNjHz4g9OZNSJOTGd1aUwMrT06ckgLNjRuU7+rqgiktbXoglCUlkOt0f0WCAyFatAgR9+5NUDZ85QpsVVWUFl5XB8nChXTt7OzEwK5dkOflQZmfT2luhwPGJUvoOsJggCg6mulyDw/DuH49YLNRmmzPHqhOnKDrEYMBFk7HZCQBI0FyWHHkyBQQytOnId+9e4Ie67VrsF6/DuHs2YhsbWWpNFhcjNHGRoRWVUG6apXXo9+/w7R5MyCXY9bbt1M8O1RRATvnfdWFC5Bt305lhi5fhr26enqR8AtCLof22TMIlUq4vn2DODaWKvWBkO3fD9Xx416PWywwbthAvappbYV4zhxKt7e0YKigAOKVK6Hxc6mx/n70k3NOJ8IbGiCJi6PnzIWFcDx5Mj0QIdnZUBcVTYiEdOtWhJaVUZrt6VPIiTEeCL5Ra20trERWIkFURweLzlB5Oew1NZDqdAgtKfFGh+cQsh88cwaj9fXQtrdDKJNRGWNaGtxdXdMEodNBzRkhJ3sSEhBWW4tg8kqR8FZWQnXokNe7zc2wVVYi8vFjZqRv2zaMf/0K0bJliLh9m9EH8vPhNBjArzmSKiEZGRDPnesF9eMHzEePQtvU5I2q3Q5jUpJfAIQYuE/s2IHQc+e8SqxWmHQ6RDQ1UY+SgrXfv8/4pOhcHz+yVHK8ewdzdjY9K01PR+j58+wCxtRUuLu7EXb3LoK5J5OkSlBMDFS8wh2qroYqN5eec37+jIGdO6cPQrJuHcKvXqUHx00m2OvroeTe9MGiIpCXxMcnIMglfPlL+KOPHtGzylOnWGMkzjCuWEHp2rY2CBUKb6ps2UL7g/b5c5Y+7pERCENCvJFubMQQry9NRhMwEnwQY0YjPDYbxPPnewt27VpIUlIYiNG2NgQnJdEo+fi+xhh25w6Cly6ldh3v38NMunl0NLQGw5RUURQWQpGTM8XjlrIyjNTWTj8S/Fwm3VQgFlMlvoIVJSYiglPscbtZ4bKC5kxGvnqFoLAwuiNjw3BpKSSpqQivqPCmypcvGEhPp2va7ckTzdny3dqUlwfX69fTBxEUF4fIhoYpB30F+zs+OcgfG8h+sLQUo3o9ZDk5UBUW+k0V5dmzkE/K/97kZHgsln8HBL9ghbGx0HJ579PuaG+Hee9eZky8ejU0lZVsb8rNhevNG6guXYJs0yZKH7p4EXbe60WcE1FfzyJL+wY3JAZCEXgU99NRzQUFcLS0MF2zeJMrIU7m88cGwu9Zvtzb/JqbaX2Rz1+q8IdPUm+D+/YFjAKN+K9+T5Di5n9OkpfcJEvov+MHzZuHIO6yHqeT5TUZ7AQSibcmyOjBzUo+W2R8EXGderyvD+OfPv1zEL88+R9i/j9+nvbEx2/zAGSOnpl/FAAH/wR2AHCcFypx/wAAAABJRU5ErkJggg==" mode=""/>
+                              </view>
+                              <view class="finals-score">
+                                  <view class="score1">1</view>
+                                  <view class="box-center">
+                                      <view class="tag">决赛</view>
+                                  </view>
+                                  <view class="score2">0</view>
+                              </view>
+                              <view class="team right-team">
+                                  <view class="logo-box">
+                                      <image src="https://duihui.duoduocdn.com/zuqiu/zq_guojimilan_127675.png" class="img-logo" mode=""/>
+                                  </view>
+                                  <view class="name">国际米兰</view>
+                              </view>
+                          </view>
+
+                      </view>
+
+                      <!-- 下半场 -->
+                      <view class="bottom">
+                          <view class="level flex">
+                              <view class="teams-box" style="width: 100%;">
+                                  <view class="vct-nba-teams v-n-t east">
+                                      <view class="up-area">
+                                          <view class="line-up right-win">
+                                              <view class="col-line"></view>
+                                              <view class="left-line">
+                                                  <view class="border-line"></view>
+                                              </view>
+                                              <view class="right-line">
+                                                  <view class="border-line"></view>
+                                              </view>
+                                          </view>
+                                          <view class="score">
+                                              <view class="flex">1-1</view>
+                                              <view class="flex">0-4</view>
+                                          </view>
+                                      </view>
+
+                                      <view class="teams flex">
+                                          <view class="team left-team">
+                                            <view class="logo-box">
+                                                <image src="https://duihui.duoduocdn.com/zuqiu/zq_huangjiamadeli_641365.png" class="img-logo" mode=""/>
+                                            </view>
+                                            <view class="name">皇马</view>
+                                          </view>
+                                          <view class="team right-team">
+                                            <view class="logo-box">
+                                                <image src="https://duihui.duoduocdn.com/zuqiu/zq_mancheng_206114.png" class="img-logo" mode=""/>
+                                            </view>
+                                            <view class="name">曼城</view>
+                                          </view>
+                                      </view>
+                                  </view>
+                              </view>
+                          </view>
+
+                          <view class="level flex">
+                              <view class="teams-box" style="width: 50%;">
+                                  <view class="vct-nba-teams v-n-t east">
+                                      <view class="up-area">
+                                          <view class="line-up left-win">
+                                              <view class="col-line"></view>
+                                              <view class="left-line">
+                                                  <view class="border-line"></view>
+                                              </view>
+                                              <view class="right-line">
+                                                  <view class="border-line"></view>
+                                              </view>
+                                          </view>
+                                          <view class="score">
+                                              <view class="flex">2-0</view>
+                                              <view class="flex">2-0</view>
+                                          </view>
+                                      </view>
+
+                                      <view class="teams flex">
+                                          <view class="team left-team">
+                                              <view class="logo-box">
+                                                  <image src="https://duihui.duoduocdn.com/zuqiu/zq_huangjiamadeli_641365.png" class="img-logo" mode=""/>
+                                              </view>
+                                              <view class="name">皇马</view>
+                                          </view>
+                                          <view class="team right-team">
+                                              <view class="logo-box">
+                                                  <image src="https://duihui.duoduocdn.com/zuqiu/zq_qieerxi_007957.png" class="img-logo" mode=""/>
+                                              </view>
+                                              <view class="name">切尔西</view>
+                                          </view>
+                                      </view>
+                                  </view>
+                              </view>
+
+                              <view class="teams-box" style="width: 50%;">
+                                  <view class="vct-nba-teams v-n-t east">
+                                      <view class="up-area">
+                                          <view class="line-up left-win">
+                                              <view class="col-line"></view>
+                                              <view class="left-line">
+                                                  <view class="border-line"></view>
+                                              </view>
+                                              <view class="right-line">
+                                                  <view class="border-line"></view>
+                                              </view>
+                                          </view>
+                                          <view class="score">
+                                              <view class="flex">3-0</view>
+                                              <view class="flex">1-1</view>
+                                          </view>
+                                      </view>
+
+                                      <view class="teams flex">
+                                          <view class="team left-team">
+                                              <view class="logo-box">
+                                                  <image src="https://duihui.duoduocdn.com/zuqiu/zq_mancheng_206114.png" class="img-logo" mode=""/>
+                                              </view>
+                                              <view class="name">曼城</view>
+                                          </view>
+                                          <view class="team right-team">
+                                              <view class="logo-box">
+                                                  <image src="https://duihui.duoduocdn.com/zuqiu/zq_bairenmunihei_189833.png" class="img-logo" mode=""/>
+                                              </view>
+                                              <view class="name">拜仁</view>
+                                          </view>
+                                      </view>
+                                  </view>
+                              </view>
+                          </view>
+
+
+
+                      </view>
+
+
+
+
+
+
+
+                  </view>
+            </view>
+        </view>
+    </view>
+    
+</view>
+
+

@@ -1,0 +1,235 @@
+/* pages/knockout/knockout.wxss */
+.duizhen-box{
+  padding: 20rpx 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 70%;
+}
+
+.flex {
+  display: flex;
+}
+.v-n-t {
+  margin: 0 auto;
+  width: 50%;
+}
+.v-n-t .teams {
+  position: relative;
+  width: 100%;
+  justify-items: center;
+  justify-content: space-between;
+}
+.duizhen-box .level{
+  margin: 0 30rpx 0 0;
+}
+.v-n-t .teams .team.left-team{
+  left: 0;
+  transform: translateX(-50%);
+}
+.v-n-t .teams .team.right-team {
+  right: 0;
+  transform: translateX(50%);
+}
+.v-n-t .teams .team {
+  cursor: pointer;
+}
+.v-n-t .teams .logo-box {
+  position: relative;
+  margin: 0 auto .06rem;
+  width: 70rpx;
+  height: 70rpx;
+}
+.v-n-t .teams .logo-box .img-logo {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+  object-fit: cover;
+  vertical-align: top;
+}
+.v-n-t .teams .name {
+  font-size: 28rpx;
+  text-align: center;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.v-n-t .down-area {
+  margin: 10rpx 0 20rpx;
+}
+.v-n-t .up-area{
+  margin: 20rpx 0 10rpx;
+}
+.v-n-t .score{
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+}
+.v-n-t .score .flex{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: inherit;
+}
+.v-n-t .line-up.line-down {
+  margin-bottom: 0;
+  transform: scaleY(-1);
+}
+.v-n-t .line-up{
+  position: relative;
+  margin-bottom: .04rem;
+  height: 18px;
+}
+.v-n-t .line-up .left-line {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  padding-right: 1px;
+  width: 50%;
+  height: 6px;
+}
+.v-n-t .line-up.left-win .left-line .border-line{
+  border-color: #2e9fff;
+}
+.v-n-t .line-up .left-line .border-line {
+  height: 100%;
+  border: 2px solid #dee8fa;
+    border-top-color: rgb(222, 232, 250);
+    border-right-color: rgb(222, 232, 250);
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-bottom-color: rgb(222, 232, 250);
+    border-bottom-width: 2px;
+    border-left-color: rgb(222, 232, 250);
+  border-bottom-width: 0;
+  border-right: none;
+    border-right-color: currentcolor;
+}
+.v-n-t .line-up .right-line{
+  position: absolute;
+  top: 12px;
+  right: 0;
+  padding-left: 1px;
+  width: 50%;
+  height: 6px;
+}
+.v-n-t .line-up .right-line .border-line {
+  height: 100%;
+  border: 2px solid #dee8fa;
+    border-bottom-width: 2px;
+    border-left-color: rgb(222, 232, 250);
+    border-left-style: solid;
+    border-left-width: 2px;
+  border-bottom-width: 0;
+  border-left: none;
+}
+.v-n-t .line-up.left-win .col-line{
+  background-color: #2e9fff;
+}
+.v-n-t .line-up .col-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 3;
+  margin-left: -1px;
+  width: 2px;
+  height: 14px;
+  background-color: #dee8fa;
+}
+
+.v-n-t .line-up .right-line{
+  position: absolute;
+  top: 12px;
+  right: 0;
+  padding-left: 1px;
+  width: 50%;
+  height: 6px;
+}
+.v-n-t .line-up.right-win .right-line .border-line {
+  border-color: #2e9fff;
+}
+.v-n-t .line-up.right-win .col-line{
+  background-color: #2e9fff;
+}
+
+
+.flex-align-center {
+  align-items: center;
+}
+.flex-pack-center {
+  justify-content: center;
+}
+.final .team.left-team {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.final .team {
+  position: relative;
+  width: 25%;
+}
+
+.final .team .name {
+  font-size: 28rpx;
+  color: #333;
+  white-space: nowrap;
+}
+.final .team .logo-box {
+  width: 80rpx;
+  height: 80rpx;
+  position: relative;
+  border-radius: 50%;
+}
+.final .team .logo-box .img-logo{
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.win-logo {
+  position: absolute;
+  display: none;
+  top: 50%;
+  width: 60rpx;
+  height: 25rpx;
+  transform: translateY(-50%);
+}
+.final .team .win-logo{
+  display: block;
+  position: absolute;
+  top: 70rpx;
+}
+.final .team.left-team .win-logo{
+  left: 40rpx;
+}
+.final .finals-score {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  width: calc(50% - .7rem);
+  font-weight: 400;
+  box-sizing: border-box;
+}
+.final .finals-score .score1, .final .finals-score .score2{
+  flex: 1;
+  font-size: 50rpx;
+  font-weight: 700;
+}
+.final .finals-score{
+  font-weight: 400;
+}
+.final .finals-score .score2{
+  text-align: right;
+}
+.final .team.right-team{
+  display: flex;
+  align-items: center;
+}
+.final .team.left-team .name{
+  padding-right: 15rpx;
+}

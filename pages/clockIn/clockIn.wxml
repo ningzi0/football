@@ -1,0 +1,62 @@
+
+
+<view class="other">
+    <view class="tabsTitle">
+        <text>球队</text>
+        <text>信息</text>
+        <text>次数</text>
+    </view>
+
+    <view class="otherContainer">
+    <block wx:for="{{other}}">
+      <navigator url="/pages/team/team" hover-class="none">
+        <view class="otherC_item">
+          <view class="flex1">
+            <image src="{{item.img}}" mode=""/>
+          </view>
+          <view class="flex1">
+              <text>{{item.coach}}</text>
+              <text>{{item.playername}}</text>
+          </view>
+          <view class="flex1">
+            <text>{{item.socialstatus}}</text>
+          </view>
+        </view>
+      </navigator>
+
+    </block>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

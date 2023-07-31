@@ -1,0 +1,49 @@
+/* pages/other/other.wxss */
+.t-input{
+  border-radius: 200rpx !important;
+  margin: 0 25rpx !important;
+  padding: 20rpx 35rpx !important;
+}
+.other{
+  margin: 20rpx 25rpx;
+  background: #fff;
+  padding: 30rpx;
+  border-radius: 20rpx;
+}
+.tabsTitle{
+  display: flex;
+  font-size: 28rpx;
+}
+.tabsTitle text{
+  flex: 1;
+  text-align: center;
+  color: #999;
+}
+
+.otherC_item{
+  display: flex;
+  align-items: center;
+  padding: 40rpx 0;
+  border-bottom: 1px solid #eee;
+}
+.otherContainer navigator:last-child .otherC_item{
+  border: 0;
+}
+.otherC_item image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.flex1{
+  flex: 1;
+  text-align: center;
+}
+.flex1 text{
+  display: block;
+  font-size: 28rpx;
+}
+.flex1 text:nth-child(1){
+  font-weight: bold;
+}
+
+
+

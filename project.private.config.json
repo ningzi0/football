@@ -167,6 +167,20 @@
                     "query": "",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "淘汰赛",
+                    "pathName": "pages/knockout/knockout",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "打卡",
+                    "pathName": "pages/clockIn/clockIn",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }
