@@ -1,8 +1,8 @@
 <!--pages/trade/trade.wxml-->
 <view class="trade">
 
-  <t-tabs defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs" t-class-content="custom-panel">
-    <t-tab-panel label="转会" value="0">
+  <t-tabs defaultValue="{{0}}" sticky bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs" t-class-content="custom-panel">
+    <t-tab-panel label="转会" value="0" t-class-item="on">
 
       <t-tabs theme="tag" defaultValue="{{0}}" bind:change="onTabsChange" bind:click="onTabsClick" t-class="custom-tabs" t-class-content="custom-panel">
         <t-tab-panel label="全部转会" value="0">

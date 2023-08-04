@@ -76,3 +76,14 @@
   border-left: 10rpx solid rgb(32, 122, 88);
 }
 
+.trade .t-tabs .t-sticky {
+  z-index: 9 !important;
+}
+.trade .t-tabs .t-tabs__content .t-tabs__content-inner .t-sticky{
+  z-index: 2 !important;
+  position: fixed !important;
+  width: 100%;
+}
+.trade .t-tabs .t-tabs__content .t-tabs__content-inner .t-tabs__content{
+  padding-top: 95rpx;
+}

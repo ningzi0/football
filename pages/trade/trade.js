@@ -51,6 +51,56 @@ Page({
             playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
             playerid:1,
             theme:'danger'
+        },{
+            state: '已通过',
+            nameCn: '哈兰德',
+            nameEn: 'Erling Haaland',
+            PersonalInfo: '23岁 194cm 88kg',
+            playerInfo:'曼城 9号 前锋',
+            playerLetter: '200元',
+            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
+            playerid:1,
+            theme:'danger'
+        },{
+            state: '已通过',
+            nameCn: '哈兰德',
+            nameEn: 'Erling Haaland',
+            PersonalInfo: '23岁 194cm 88kg',
+            playerInfo:'曼城 9号 前锋',
+            playerLetter: '200元',
+            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
+            playerid:1,
+            theme:'danger'
+        },{
+            state: '已通过',
+            nameCn: '哈兰德',
+            nameEn: 'Erling Haaland',
+            PersonalInfo: '23岁 194cm 88kg',
+            playerInfo:'曼城 9号 前锋',
+            playerLetter: '200元',
+            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
+            playerid:1,
+            theme:'danger'
+        },{
+            state: '已通过',
+            nameCn: '哈兰德',
+            nameEn: 'Erling Haaland',
+            PersonalInfo: '23岁 194cm 88kg',
+            playerInfo:'曼城 9号 前锋',
+            playerLetter: '200元',
+            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
+            playerid:1,
+            theme:'danger'
+        },{
+            state: '已通过',
+            nameCn: '哈兰德',
+            nameEn: 'Erling Haaland',
+            PersonalInfo: '23岁 194cm 88kg',
+            playerInfo:'曼城 9号 前锋',
+            playerLetter: '200元',
+            playerIcon: 'https://images.liquorbox.cn/pingqiu/216.png',
+            playerid:1,
+            theme:'danger'
         },
         
     ],
